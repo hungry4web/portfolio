@@ -1,7 +1,5 @@
-require 'compass/import-once/activate'
 add_import_path "bower_components/bourbon/dist/"
 add_import_path "bower_components/neat/app/assets/stylesheets/"
-add_import_path "bower_components/bitters/app/assets/stylesheets/"
 
 # Set this to the root of your project when deployed:
 http_path = "/"
@@ -14,7 +12,7 @@ javascripts_dir = "js"
 # output_style = :expanded or :nested or :compact or :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
-relative_assets = true
+# relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 # line_comments = false
