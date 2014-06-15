@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hungry4web/portfolio",
+  "authors": "Christine Andrews" [
+    "kurtcunningham <cunningham.kurt@gmail.com>"
+  ],
+  "description": "Hungry 4 Web",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bourbon": "~4.0.1",
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.2",
+    "neat": "~1.6.0"
+  }
+}
