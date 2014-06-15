@@ -1,0 +1,52 @@
+
+/*------- HOMEPAGE STYLES ------- */
+
+.main-large {
+	background: $primary-color url('../images/hp-main-image-lg.jpg') center center;
+  background-size: cover; 
+  -moz-background-size: cover;
+  line-height: 10px;
+  min-height: 400px;
+  text-align: center;
+}
+
+.favorites {
+  margin-top:10px;
+  margin-bottom:65px;
+	text-align: center;
+}
+
+.feature-1 {
+		
+}
+
+.feature-2 {
+		
+}
+
+.feature-3 {
+		
+}
+
+.testimonials {
+	background: lighten($secondary-color, 10%);
+  padding: 0px 40px 80px 40px;
+	text-align: center;
+}
+
+
+
+/*------- MOBILE RESPONSIVE MOBILE ------- */
+@media only screen and (max-width: 479px) {
+
+
+}
+
+/*------- RESPONSIVE TABLET ------- */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    
+  }
+
+

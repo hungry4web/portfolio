@@ -1,196 +1,397 @@
 @import url("http://fonts.googleapis.com/css?family=Raleway:400,700,600,500|Merriweather:400,700,400italic,700italic");
-/* line 3, ../sass/_global.scss */
+/*------- 1. TYPOGRAPHY ------- */
+/* line 15, ../sass/_global.scss */
 body, p {
   color: #777777;
   font-family: "Raleway", sans-serif, Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
-  line-height: 26px;
-  text-align: left;
+  letter-spacing: 0px;
+  line-height: 20px;
 }
 
-/* line 14, ../sass/_global.scss */
+/* line 26, ../sass/_global.scss */
 h1 {
   color: white;
   font-family: "Merriweather", serif, Helvetica, Arial, sans-serif;
-  font-size: rem-calc(40);
+  font-size: 63px;
   font-weight: 700;
-  text-align: center;
-  text-shadow: 2px 2px #02b2b0;
+  text-shadow: 3px 3px #01807e;
 }
 
-/* line 25, ../sass/_global.scss */
+/* line 36, ../sass/_global.scss */
 h2 {
   color: white;
   font-family: "Raleway", sans-serif, Helvetica, Arial, sans-serif;
-  font-size: rem-calc(24);
+  font-size: 27px;
   font-weight: 600;
   letter-spacing: 1px;
   text-align: center;
-  text-shadow: 2px 2px #02b2b0;
+  text-shadow: 2px 2px #01807e;
   text-transform: uppercase;
 }
 
-/* line 41, ../sass/_global.scss */
-.btn {
-  border: none;
-  font-family: "Raleway", sans-serif, Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  color: #f76b47;
-  background: none;
-  cursor: pointer;
-  padding: 25px 80px;
-  display: inline-block;
-  margin: 15px 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+/* line 51, ../sass/_global.scss */
+h3 {
+  color: #777777;
+  font-family: "Merriweather", serif, Helvetica, Arial, sans-serif;
+  font-size: 23px;
   font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*------- 2. HEADER NAV ------- */
+/* line 67, ../sass/_global.scss */
+.logo {
+  float: left;
+  margin: 20px 0 60px 10px;
+}
+
+/* line 75, ../sass/_global.scss */
+.main-nav ul {
+  float: right;
+  margin-top: 85px;
+}
+/* line 78, ../sass/_global.scss */
+.main-nav ul li {
+  display: inline;
+  padding: 50px 0px 0px 30px;
+}
+/* line 81, ../sass/_global.scss */
+.main-nav ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+/* line 86, ../sass/_global.scss */
+.main-nav ul li a:hover {
+  color: #f6ca68;
+  text-decoration: none;
+}
+
+/*------- 3. CONTACT BAR ------- */
+/* line 96, ../sass/_global.scss */
+.contact {
+  background: #ddd;
+  margin: -10px;
+}
+
+/* line 101, ../sass/_global.scss */
+.contact ul {
+  float: right;
+  margin: 10px 0 15px 0;
+}
+/* line 104, ../sass/_global.scss */
+.contact ul li {
+  display: inline;
+  padding: 0 20px;
+}
+/* line 107, ../sass/_global.scss */
+.contact ul li a {
+  color: #777;
+  font-size: 14px;
+  text-decoration: none;
+}
+/* line 111, ../sass/_global.scss */
+.contact ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*------- 4. SOCIAL BAR ------- */
+/* line 120, ../sass/_global.scss */
+.social {
+  background: #02b2b0;
+}
+
+/* line 124, ../sass/_global.scss */
+.social ul {
+  float: left;
+  margin: 25px 0;
+}
+/* line 127, ../sass/_global.scss */
+.social ul li {
+  display: inline;
+  padding: 0px 5px;
+}
+
+/* line 134, ../sass/_global.scss */
+.twitter:hover, .linkedin:hover,
+.github:hover, .dribbble:hover {
+  opacity: 0.5;
+}
+
+/*------- 5. 3D BUTTONS ------- */
+/* line 140, ../sass/_global.scss */
+.btn {
+  background-color: #f76b47;
+  border: none;
+  color: #f6ca68;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Raleway", sans-serif, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 30px;
   outline: none;
+  padding: 10px 15px;
   position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
-/* line 61, ../sass/_global.scss */
+/* line 163, ../sass/_global.scss */
 .btn:after {
   content: '';
   position: absolute;
+  transition: all 0.3s;
   z-index: -1;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
-/* line 70, ../sass/_global.scss */
+/* line 172, ../sass/_global.scss */
 .btn:before {
   font-family: 'icomoon';
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
-  text-transform: none;
   line-height: 1;
   position: relative;
+  speak: none;
+  text-transform: none;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 83, ../sass/_global.scss */
+/* line 187, ../sass/_global.scss */
 .btn-8 {
+  background: #f76b47;
   display: block;
-  background: #5cbcf6;
   outline: 1px solid transparent;
   /* FF jagged edges fix */
+  transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
 }
 
-/* line 92, ../sass/_global.scss */
+/* line 196, ../sass/_global.scss */
 .btn-8:active {
-  background: #55b7f3;
+  background: #f76b47;
 }
 
 /* Button 8a */
-/* line 97, ../sass/_global.scss */
+/* line 201, ../sass/_global.scss */
 .btn-8a:after {
-  width: 100%;
+  background: #f54416;
   height: 42%;
   /* should be 40% but there's a gap in Chrome Version 34.0.1847.131 */
   left: 0;
   top: -40%;
-  background: #49a7df;
+  transform-origin: 0% 100%;
+  transform: rotateX(90deg);
+  width: 100%;
   -webkit-transform-origin: 0% 100%;
   -webkit-transform: rotateX(90deg);
   -moz-transform-origin: 0% 100%;
   -moz-transform: rotateX(90deg);
-  transform-origin: 0% 100%;
-  transform: rotateX(90deg);
 }
 
-/* line 111, ../sass/_global.scss */
+/* line 215, ../sass/_global.scss */
 .btn-8a:hover {
+  transform: rotateX(-15deg);
   -webkit-transform: rotateX(-15deg);
   -moz-transform: rotateX(-15deg);
   -ms-transform: rotateX(-15deg);
-  transform: rotateX(-15deg);
 }
 
 /* Button 8b */
-/* line 119, ../sass/_global.scss */
+/* line 223, ../sass/_global.scss */
 .btn-8b:after {
-  width: 100%;
+  background: #f54416;
   height: 40%;
   left: 0;
   top: 100%;
-  background: #49a7df;
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  width: 100%;
   -webkit-transform-origin: 0% 0%;
   -webkit-transform: rotateX(-90deg);
   -moz-transform-origin: 0% 0%;
   -moz-transform: rotateX(-90deg);
   -ms-transform-origin: 0% 0%;
   -ms-transform: rotateX(-90deg);
-  transform-origin: 0% 0%;
-  transform: rotateX(-90deg);
 }
 
-/* line 135, ../sass/_global.scss */
+/* line 239, ../sass/_global.scss */
 .btn-8b:hover {
+  transform: rotateX(15deg);
   -webkit-transform: rotateX(15deg);
   -moz-transform: rotateX(15deg);
   -ms-transform: rotateX(15deg);
-  transform: rotateX(15deg);
 }
 
 /* Button 8c */
-/* line 143, ../sass/_global.scss */
+/* line 247, ../sass/_global.scss */
 .btn-8c:after {
-  width: 21%;
-  /* should be 20% but there's a gap in Chrome Version 34.0.1847.131 */
+  background: #f54416;
   height: 100%;
   left: -20%;
   top: 0;
-  background: #49a7df;
+  transform-origin: 100% 0%;
+  transform: rotateY(-90deg);
+  width: 21%;
+  /* should be 20% but there's a gap in Chrome Version 34.0.1847.131 */
   -webkit-transform-origin: 100% 0%;
   -webkit-transform: rotateY(-90deg);
   -moz-transform-origin: 100% 0%;
   -moz-transform: rotateY(-90deg);
   -ms-transform-origin: 100% 0%;
   -ms-transform: rotateY(-90deg);
-  transform-origin: 100% 0%;
-  transform: rotateY(-90deg);
 }
 
-/* line 159, ../sass/_global.scss */
+/* line 263, ../sass/_global.scss */
 .btn-8c:hover {
+  transform: rotateY(15deg);
   -webkit-transform: rotateY(15deg);
   -moz-transform: rotateY(15deg);
   -ms-transform: rotateY(15deg);
-  transform: rotateY(15deg);
 }
 
 /* Button 8d */
-/* line 167, ../sass/_global.scss */
+/* line 271, ../sass/_global.scss */
 .btn-8d:after {
-  width: 20%;
+  background: #f54416;
   height: 100%;
   left: 100%;
   top: 0;
-  background: #49a7df;
+  transform-origin: 0% 0%;
+  transform: rotateY(90deg);
+  width: 20%;
   -webkit-transform-origin: 0% 0%;
   -webkit-transform: rotateY(90deg);
   -moz-transform-origin: 0% 0%;
   -moz-transform: rotateY(90deg);
   -ms-transform-origin: 0% 0%;
   -ms-transform: rotateY(90deg);
-  transform-origin: 0% 0%;
-  transform: rotateY(90deg);
 }
 
-/* line 183, ../sass/_global.scss */
+/* line 287, ../sass/_global.scss */
 .btn-8d:hover {
   -webkit-transform: rotateY(-15deg);
   -moz-transform: rotateY(-15deg);
   -ms-transform: rotateY(-15deg);
   transform: rotateY(-15deg);
 }
+
+/*------- 6. MISC ------- */
+/* line 295, ../sass/_global.scss */
+.color-bar {
+  background: url("../images/color-bar.png");
+  background-repeat: repeat-x;
+  margin: -10px -10px 50px -10px;
+}
+
+/* line 301, ../sass/_global.scss */
+.down-circle {
+  background: #f6ca68;
+  border-radius: 50%;
+  box-shadow: 2px 2px #f3b938;
+  height: 75px;
+  width: 75px;
+  margin-top: -30px;
+  position: absolute;
+}
+
+/* line 311, ../sass/_global.scss */
+.right {
+  float: right;
+}
+
+/* line 315, ../sass/_global.scss */
+.left {
+  float: left;
+}
+
+/* line 319, ../sass/_global.scss */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*------- 7. RESPONSIVE MOBILE ------- */
+@media only screen and (max-width: 479px) {
+  /* line 331, ../sass/_global.scss */
+  h1 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  /* line 336, ../sass/_global.scss */
+  h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  /* line 341, ../sass/_global.scss */
+  h3 {
+    font-size: 20px;
+  }
+
+  /* line 345, ../sass/_global.scss */
+  .logo img {
+    margin: 20px 0 10px 0;
+  }
+
+  /* line 349, ../sass/_global.scss */
+  .main-nav ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  /* line 352, ../sass/_global.scss */
+  .main-nav ul li {
+    display: inline;
+    padding: 0px 0px 0px 30px;
+  }
+  /* line 355, ../sass/_global.scss */
+  .main-nav ul li a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  /* line 359, ../sass/_global.scss */
+  .main-nav ul li a:hover {
+    color: #f6ca68;
+    text-decoration: none;
+  }
+
+  /* line 367, ../sass/_global.scss */
+  .right {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 374, ../sass/_global.scss */
+  .contact ul li {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10px;
+    text-align: center;
+  }
+
+  /* line 384, ../sass/_global.scss */
+  .social ul li {
+    display: inline;
+    padding: 0px 10px;
+  }
+}
+/*------- 8. RESPONSIVE TABLET ------- */
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
