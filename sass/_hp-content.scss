@@ -8,6 +8,11 @@
   line-height: 10px;
   min-height: 400px;
   text-align: center;
+
+  h1, h2{
+    color: #fff;
+    font-family: $merriweather;
+  }
 }
 
 .favorites {
@@ -17,7 +22,13 @@
 }
 
 .feature-1 {
-		
+  background-color: $secondary-color;
+  height: 200px;
+  left: -7px;
+  @include skew (8, 0);
+  position: absolute;
+  width: 265px;
+  z-index: -1;
 }
 
 .feature-2 {

@@ -1,15 +1,15 @@
 //STYLESHEETS
-
-	// SASS
+	
+	//GLOBAL
+	@import "compass/reset";
 	@import "variables";
-	
-	
+	@import "mixins";
+	@import "global";
+
 	// FROM SKELETON
 	@import "base";
+	@import "layout";
 	@import "skeleton";
 
 	// PAGE STYLES
-	@import "global";
 	@import "hp-content";
-  
-
