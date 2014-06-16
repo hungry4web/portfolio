@@ -1,6 +1,3 @@
-add_import_path "bower_components/bourbon/dist/"
-add_import_path "bower_components/neat/app/assets/stylesheets/"
-
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "stylesheets"
