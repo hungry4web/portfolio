@@ -1,5 +1,4 @@
-
-/*------- HOMEPAGE STYLES ------- */
+//HOMEPAGE STYLES
 
 .main-large {
 	background: $primary-color url('../images/hp-main-image-lg.jpg') center center;
@@ -13,6 +12,10 @@
     color: #fff;
     font-family: $merriweather;
   }
+
+  .down-circle{
+    margin: 0 auto;
+  }
 }
 
 .favorites {
@@ -21,36 +24,36 @@
 	text-align: center;
 }
 
-.feature-1 {
-  background-color: $secondary-color;
-  height: 200px;
-  left: -7px;
-  @include skew (8, 0);
-  position: absolute;
-  width: 265px;
-  z-index: -1;
-}
+.feature-block{
+  position: relative;
 
-.feature-2 {
-		
-}
+  .feature-1 {
+    background-color: $secondary-color;
+    height: 200px;
+    left: -7px;
+    @include skew (8, 0);
+    position: absolute;
+    width: 265px;
+    z-index: -1;
 
-.feature-3 {
-		
+    @media only screen and (max-width: 479px) {
+      display: none;
+    }
+  }
+
+  .feature-2{
+
+  }
+
+  .feature-3{
+
+  }
 }
 
 .testimonials {
 	background: lighten($secondary-color, 10%);
   padding: 0px 40px 80px 40px;
 	text-align: center;
-}
-
-
-
-/*------- MOBILE RESPONSIVE MOBILE ------- */
-@media only screen and (max-width: 479px) {
-
-
 }
 
 /*------- RESPONSIVE TABLET ------- */

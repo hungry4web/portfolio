@@ -368,22 +368,34 @@ h3 {
   border-radius: 50%;
   box-shadow: 2px 2px #f3b938;
   height: 75px;
+  position: relative;
   width: 75px;
-  margin-top: -30px;
+}
+/* line 309, ../sass/_global.scss */
+.down-circle:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+/* line 314, ../sass/_global.scss */
+.down-circle img {
+  bottom: 24px;
+  left: 0;
+  margin: 0 auto;
   position: absolute;
+  right: 0;
 }
 
-/* line 311, ../sass/_global.scss */
+/* line 323, ../sass/_global.scss */
 .right {
   float: right;
 }
 
-/* line 315, ../sass/_global.scss */
+/* line 327, ../sass/_global.scss */
 .left {
   float: left;
 }
 
-/* line 319, ../sass/_global.scss */
+/* line 331, ../sass/_global.scss */
 .center {
   display: block;
   margin-left: auto;
@@ -392,58 +404,58 @@ h3 {
 
 /*------- 7. RESPONSIVE MOBILE ------- */
 @media only screen and (max-width: 479px) {
-  /* line 331, ../sass/_global.scss */
+  /* line 343, ../sass/_global.scss */
   h1 {
     font-size: 50px;
     line-height: 55px;
   }
 
-  /* line 336, ../sass/_global.scss */
+  /* line 348, ../sass/_global.scss */
   h2 {
     font-size: 28px;
     line-height: 32px;
   }
 
-  /* line 341, ../sass/_global.scss */
+  /* line 353, ../sass/_global.scss */
   h3 {
     font-size: 20px;
   }
 
-  /* line 345, ../sass/_global.scss */
+  /* line 357, ../sass/_global.scss */
   .logo img {
     margin: 20px 0 10px 0;
   }
 
-  /* line 349, ../sass/_global.scss */
+  /* line 361, ../sass/_global.scss */
   .main-nav ul {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  /* line 352, ../sass/_global.scss */
+  /* line 364, ../sass/_global.scss */
   .main-nav ul li {
     display: inline;
     padding: 0px 0px 0px 30px;
   }
-  /* line 355, ../sass/_global.scss */
+  /* line 367, ../sass/_global.scss */
   .main-nav ul li a {
     color: #fff;
     font-size: 14px;
     text-decoration: none;
   }
-  /* line 359, ../sass/_global.scss */
+  /* line 371, ../sass/_global.scss */
   .main-nav ul li a:hover {
     color: #f6ca68;
     text-decoration: none;
   }
 
-  /* line 367, ../sass/_global.scss */
+  /* line 379, ../sass/_global.scss */
   .right {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 374, ../sass/_global.scss */
+  /* line 386, ../sass/_global.scss */
   .contact ul li {
     display: block;
     margin-left: auto;
@@ -452,7 +464,7 @@ h3 {
     text-align: center;
   }
 
-  /* line 384, ../sass/_global.scss */
+  /* line 396, ../sass/_global.scss */
   .social ul li {
     display: inline;
     padding: 0px 10px;
@@ -1547,8 +1559,7 @@ or wrap each row of columns in a <div class="row"> */
   height: 0;
 }
 
-/*------- HOMEPAGE STYLES ------- */
-/* line 4, ../sass/_hp-content.scss */
+/* line 3, ../sass/_hp-content.scss */
 .main-large {
   background: #02b2b0 url("../images/hp-main-image-lg.jpg") center center;
   background-size: cover;
@@ -1557,21 +1568,29 @@ or wrap each row of columns in a <div class="row"> */
   min-height: 400px;
   text-align: center;
 }
-/* line 12, ../sass/_hp-content.scss */
+/* line 11, ../sass/_hp-content.scss */
 .main-large h1, .main-large h2 {
   color: #fff;
   font-family: "Merriweather", serif;
 }
+/* line 16, ../sass/_hp-content.scss */
+.main-large .down-circle {
+  margin: 0 auto;
+}
 
-/* line 18, ../sass/_hp-content.scss */
+/* line 21, ../sass/_hp-content.scss */
 .favorites {
   margin-top: 10px;
   margin-bottom: 65px;
   text-align: center;
 }
 
-/* line 24, ../sass/_hp-content.scss */
-.feature-1 {
+/* line 27, ../sass/_hp-content.scss */
+.feature-block {
+  position: relative;
+}
+/* line 30, ../sass/_hp-content.scss */
+.feature-block .feature-1 {
   background-color: #f6ca68;
   height: 200px;
   left: -7px;
@@ -1584,13 +1603,18 @@ or wrap each row of columns in a <div class="row"> */
   width: 265px;
   z-index: -1;
 }
+@media only screen and (max-width: 479px) {
+  /* line 30, ../sass/_hp-content.scss */
+  .feature-block .feature-1 {
+    display: none;
+  }
+}
 
-/* line 42, ../sass/_hp-content.scss */
+/* line 53, ../sass/_hp-content.scss */
 .testimonials {
   background: #f9db98;
   padding: 0px 40px 80px 40px;
   text-align: center;
 }
 
-/*------- MOBILE RESPONSIVE MOBILE ------- */
 /*------- RESPONSIVE TABLET ------- */
