@@ -9,67 +9,34 @@
 // 6. MISC
 // 7. RESPONSIVE MOBILE
 // 8. RESPONSIVE TABLET
-
-/*------- 1. TYPOGRAPHY ------- */
+ 
+// 1.TYPOGRAPHY 
 
 body, p {
   color: $body-font-color;
   font: {
     family: $body-font-family;
     size: 14px;
-    weight: 300;
+    weight: 400;
   }
-  letter-spacing: 0px;
   line-height: 20px;
 }
 
-h1 {
-  color: $header-font-color-on;
-  font: {
-    family: $header-font-family;
-    size: $h1-font-size;
-    weight: 700;
-  }
-    text-shadow: 3px 3px darken($primary-color, 10%);
-}
-
-h2 {
-  color: $header-font-color-on;
-  font: {
-    family: $body-font-family;
-    size: $h2-font-size;
-    weight: 600;
-  }
-    letter-spacing: 1px;
-    text: {
-      align: center;
-      shadow: 2px 2px darken($primary-color, 10%);
-      transform: uppercase;
-      }
-  }
-
-h3 {
-    color: $header-font-color-off;
-    font: {
-      family: $header-font-family;
-      size: $h3-font-size;
-      weight: 400;
-    }
-    letter-spacing: 1px;
-    text: {
-      align: center;
-      transform: uppercase;
-    }
-}
 
 
-/*------- 2. HEADER NAV ------- */
+
+// 2.HEADER NAV 
 .logo {
   float: left;
-  margin: 20px 0 60px 10px; 
+  margin: 20px 0 90px 10px; 
+
+  @media only screen and (max-width: 479px) {
+  margin: 30px 0 10px 0;  
+  }
 }
 
-.main-nav {
+.main-nav{
+  margin:-10px;
 }
 
 .main-nav ul {
@@ -91,7 +58,7 @@ h3 {
     }
 }
 
-/*------- 3. CONTACT BAR ------- */
+// 3. CONTACT BAR 
 
 .contact {
   background: #ddd;
@@ -100,30 +67,32 @@ h3 {
 
 .contact ul {
   float: right;
-  margin:10px 0 15px 0;
+  font-weight: 500;
+  margin:15px 0 20px 0;
   li {
     display:inline;
     padding: 0 20px;
     a {
-      color: #777;
+      color:#777;
       font-size: 14px;
       text-decoration: none;
       &:hover {
-        color: #fff;
+       color: #fff;
         text-decoration: none;
             }
         }
     }
 }
 
-/*------- 4. SOCIAL BAR ------- */
+// 4. SOCIAL BAR 
 .social {
   background: $primary-color;
+  width: 100%;
 }
 
 .social ul {
   float: left;
-  margin: 25px 0;
+  margin: 30px 0;
   li {
    display:inline;
    padding: 0px 5px;    
@@ -136,9 +105,10 @@ h3 {
 }
 
 
-/*------- 5. 3D BUTTONS ------- */
+// 5. 3D BUTTONS
 .btn {
   background-color: $button-color;
+  background: none;
   border: none;
   color: $secondary-color;
   cursor: pointer;
@@ -154,28 +124,21 @@ h3 {
   padding: 10px 15px;
   position: relative;
   text-transform: uppercase;
-  transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
-  
+  transition: all 0.3s;
 }
 
 .btn:after {
   content: '';
   position: absolute;
-  transition: all 0.3s;
   z-index: -1;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .btn:before {
-  font: {
-    family: 'icomoon';
-    style: normal;
-    weight: normal;
-    variant: normal;
-  }
   line-height: 1;
   position: relative;
   speak: none;
@@ -187,20 +150,20 @@ h3 {
 .btn-8 {
   background: $button-color;
   display: block;
-  outline: 1px solid transparent; /* FF jagged edges fix */
-  transform-style: preserve-3d;
+  outline: 0px solid $button-color; 
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .btn-8:active {
   background: $button-color;
 }
 
-/* Button 8a */
+// Button 8a 
 .btn-8a:after {
   background: darken($button-color, 10%);
-  height: 42%; /* should be 40% but there's a gap in Chrome Version 34.0.1847.131 */
+  height: 42%; 
   left: 0;
   top: -40%;
   transform-origin: 0% 100%;
@@ -219,7 +182,7 @@ h3 {
   -ms-transform: rotateX(-15deg);
 }
 
-/* Button 8b */
+// Button 8b 
 .btn-8b:after {
   background: darken($button-color, 10%);
   height: 40%;
@@ -243,38 +206,36 @@ h3 {
   -ms-transform: rotateX(15deg);
 }
 
-/* Button 8c */
+// Button 8c 
 .btn-8c:after {
   background: darken($button-color, 10%);
   height: 100%;
   left: -20%;
   top: 0;
-  transform-origin: 100% 0%;
-  transform: rotateY(-90deg);
-  width: 21%; /* should be 20% but there's a gap in Chrome Version 34.0.1847.131 */
+  width: 21%; 
   -webkit-transform-origin: 100% 0%;
   -webkit-transform: rotateY(-90deg);
   -moz-transform-origin: 100% 0%;
   -moz-transform: rotateY(-90deg);
   -ms-transform-origin: 100% 0%;
   -ms-transform: rotateY(-90deg);
+  transform-origin: 100% 0%;
+  transform: rotateY(-90deg);
 }
 
 .btn-8c:hover {
-  transform: rotateY(15deg);
-  -webkit-transform: rotateY(15deg);
-  -moz-transform: rotateY(15deg);
-  -ms-transform: rotateY(15deg);
+  -webkit-transform: rotateY(20deg);
+  -moz-transform: rotateY(20deg);
+  -ms-transform: rotateY(20deg);
+  transform: rotateY(20deg);
 }
 
-/* Button 8d */
+// Button 8d 
 .btn-8d:after {
   background: darken($button-color, 10%);
   height: 100%;
   left: 100%;
   top: 0;
-  transform-origin: 0% 0%;
-  transform: rotateY(90deg);
   width: 20%;
   -webkit-transform-origin: 0% 0%;
   -webkit-transform: rotateY(90deg);
@@ -282,16 +243,18 @@ h3 {
   -moz-transform: rotateY(90deg);
   -ms-transform-origin: 0% 0%;
   -ms-transform: rotateY(90deg);
+  transform-origin: 0% 0%;
+  transform: rotateY(90deg);
 }
 
 .btn-8d:hover {
-  -webkit-transform: rotateY(-15deg);
-  -moz-transform: rotateY(-15deg);
-  -ms-transform: rotateY(-15deg);
-  transform: rotateY(-15deg);
+  -webkit-transform: rotateY(-20deg);
+  -moz-transform: rotateY(-20deg);
+  -ms-transform: rotateY(-20deg);
+  transform: rotateY(-20deg);
 }
 
-/*------- 6. MISC ------- */
+// 6. MISC 
 .color-bar {
   background: url('../images/color-bar.png');
   background-repeat: repeat-x;
@@ -307,8 +270,9 @@ h3 {
   width: 75px;
 
   &:hover{
+    background: darken($secondary-color, 10%);
+    box-shadow: 2px 2px lighten($secondary-color, 10%);
     cursor: pointer;
-    opacity: 0.8;
   }
 
   img{
@@ -328,31 +292,18 @@ h3 {
   float: left;
 }
 
-.center { 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.center {
+    left: 0;
+    right: 0;
 }
 
 
-/*------- 7. RESPONSIVE MOBILE ------- */
+// 7. RESPONSIVE MOBILE 
 
 
 @media only screen and (max-width: 479px) {
 
-h1 {
-  font-size:50px; 
-  line-height: 55px;
-}
 
-h2 {
-  font-size:28px; 
-  line-height: 32px;
-}
-
-h3 {
-  font-size:20px;
-}
 
 .logo img {
   margin: 20px 0 10px 0;  
@@ -376,18 +327,12 @@ h3 {
     }
   }
 
-.right { 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .contact ul {
+        margin: 20px;
     li {
       display: block;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 0px 10px;
       text-align: center;
       }
     }
@@ -400,9 +345,9 @@ h3 {
 }
 }
 
-/*------- 8. RESPONSIVE TABLET ------- */
+// 8. RESPONSIVE TABLET 
 
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+// Mobile Landscape Size to Tablet Portrait (devices and browsers) 
   @media only screen and (min-width: 480px) and (max-width: 767px) {
 
 

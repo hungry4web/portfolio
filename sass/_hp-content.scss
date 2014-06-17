@@ -1,66 +1,150 @@
 //HOMEPAGE STYLES
 
 .main-large {
-	background: $primary-color url('../images/hp-main-image-lg.jpg') center center;
+	background: $primary-color url('../images/hp-main-image-lgr.jpg') center center;
   background-size: cover; 
   -moz-background-size: cover;
   line-height: 10px;
-  min-height: 400px;
+  min-height: 700px;
   text-align: center;
 
-  h1, h2{
-    color: #fff;
-    font-family: $merriweather;
+h1 {
+  color: #fff;
+  font: {
+    family: $merriweather;
+    size: $h1-font-size;
+    weight: 700;
   }
+    text-shadow: 3px 3px darken($primary-color, 10%);
+    @media only screen and (max-width: 479px) {
+      font-size: 53px;
+      line-height: 55px;
+    }
+  }
+
+h2 {
+  color: #fff;
+  font: {
+    family: $raleway;
+    size: $h2-font-size;
+    weight: 600;
+  }
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text: {
+      shadow: 2px 2px darken($primary-color, 10%);
+      transform: uppercase;
+      }
+       @media only screen and (max-width: 479px) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+}
 
   .down-circle{
     margin: 0 auto;
   }
-}
+
 
 .favorites {
   margin-top:10px;
   margin-bottom:65px;
 	text-align: center;
+
+  h3 {
+    color: $header-font-color-off;
+    font: {
+      family: $header-font-family;
+      size: $h3-font-size;
+      weight: 400;
+    }
+    letter-spacing: 1px;
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+} 
+
+
+
+}
+ .quote {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 34px;
 }
 
 .feature-block{
   position: relative;
 
-  .feature-1 {
-    background-color: $secondary-color;
+
+%feature {
     height: 200px;
     left: -7px;
-    @include skew (8, 0);
+    @include skew (9, 0);
     position: absolute;
     width: 265px;
     z-index: -1;
 
-    @media only screen and (max-width: 479px) {
-      display: none;
-    }
   }
 
-  .feature-2{
-
+  .feature-1 {
+    background-color: $secondary-color;
+    height: 200px;
+  
+    @include skew (7,3);
+    position: absolute;
+    left: -5px;
+    width: 265px;
+    z-index: -1;
+    &:hover > a img {
+    display: none;
+            }
+    
   }
 
-  .feature-3{
+  .feature-2 {
+   background-color: $primary-color;
+    height: 200px;
+    left: 2px;
+    bottom: 1px;
+    @include skew (2, 4);
+    position: absolute;
+    width: 265px;
+    z-index: -1;
+    &:hover > a img {
+    display: none;
+            }
+  }
 
+  .feature-3 {
+   background-color: $secondary-color;
+    height: 200px;
+    right: -7px;
+    @include skew (-7, -3);
+    position: absolute;
+    width: 265px;
+    z-index: -1;
   }
 }
 
 .testimonials {
 	background: lighten($secondary-color, 10%);
-  padding: 0px 40px 80px 40px;
+  padding: 0 0 60px 0;
 	text-align: center;
 }
-
-/*------- RESPONSIVE TABLET ------- */
+// RESPONSIVE TABLET 
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
     
   }
+
+   @media only screen and (max-width: 479px) {
+  .main-large {
+    background-position: 24% center;
+  }
+}
 
 
