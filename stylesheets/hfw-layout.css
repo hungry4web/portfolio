@@ -1573,7 +1573,22 @@ or wrap each row of columns in a <div class="row"> */
 .feature-block {
   position: relative;
 }
-/* line 92, ../sass/_hp-content.scss */
+/* line 81, ../sass/_hp-content.scss */
+.feature-block img {
+  -moz-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/* line 83, ../sass/_hp-content.scss */
+.feature-block img:hover {
+  opacity: 0;
+}
+/* line 86, ../sass/_hp-content.scss */
+.feature-block .inner-block {
+  padding: 1.3em;
+}
+/* line 90, ../sass/_hp-content.scss */
 .feature-block .feature-1 {
   background-color: #f6ca68;
   height: 200px;
@@ -1587,11 +1602,7 @@ or wrap each row of columns in a <div class="row"> */
   width: 265px;
   z-index: -1;
 }
-/* line 101, ../sass/_hp-content.scss */
-.feature-block .feature-1:hover > a img {
-  display: none;
-}
-/* line 107, ../sass/_hp-content.scss */
+/* line 100, ../sass/_hp-content.scss */
 .feature-block .feature-2 {
   background-color: #02b2b0;
   height: 200px;
@@ -1606,11 +1617,11 @@ or wrap each row of columns in a <div class="row"> */
   width: 265px;
   z-index: -1;
 }
-/* line 116, ../sass/_hp-content.scss */
+/* line 109, ../sass/_hp-content.scss */
 .feature-block .feature-2:hover > a img {
   display: none;
 }
-/* line 121, ../sass/_hp-content.scss */
+/* line 114, ../sass/_hp-content.scss */
 .feature-block .feature-3 {
   background-color: #f6ca68;
   height: 200px;
@@ -1625,7 +1636,7 @@ or wrap each row of columns in a <div class="row"> */
   z-index: -1;
 }
 
-/* line 132, ../sass/_hp-content.scss */
+/* line 125, ../sass/_hp-content.scss */
 .testimonials {
   background: #f9db98;
   padding: 0 0 60px 0;
@@ -1633,7 +1644,7 @@ or wrap each row of columns in a <div class="row"> */
 }
 
 @media only screen and (max-width: 479px) {
-  /* line 145, ../sass/_hp-content.scss */
+  /* line 138, ../sass/_hp-content.scss */
   .main-large {
     background-position: 24% center;
   }
