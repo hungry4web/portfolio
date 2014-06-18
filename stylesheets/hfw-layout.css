@@ -64,7 +64,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 15, ../sass/_global.scss */
+/* line 13, ../sass/_global.scss */
+html, body {
+  overflow-x: hidden;
+}
+
+/* line 19, ../sass/_global.scss */
 body, p {
   color: #777777;
   font-family: "Raleway", sans-serif, Helvetica, Arial, sans-serif;
@@ -73,99 +78,99 @@ body, p {
   line-height: 20px;
 }
 
-/* line 29, ../sass/_global.scss */
+/* line 33, ../sass/_global.scss */
 .logo {
   float: left;
   margin: 20px 0 90px 10px;
 }
 @media only screen and (max-width: 479px) {
-  /* line 29, ../sass/_global.scss */
+  /* line 33, ../sass/_global.scss */
   .logo {
     margin: 30px 0 10px 0;
   }
 }
 
-/* line 38, ../sass/_global.scss */
+/* line 42, ../sass/_global.scss */
 .main-nav {
   margin: -10px;
 }
 
-/* line 42, ../sass/_global.scss */
+/* line 46, ../sass/_global.scss */
 .main-nav ul {
   float: right;
   margin-top: 85px;
 }
-/* line 45, ../sass/_global.scss */
+/* line 49, ../sass/_global.scss */
 .main-nav ul li {
   display: inline;
   padding: 50px 0px 0px 30px;
 }
-/* line 48, ../sass/_global.scss */
+/* line 52, ../sass/_global.scss */
 .main-nav ul li a {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
 }
-/* line 53, ../sass/_global.scss */
+/* line 57, ../sass/_global.scss */
 .main-nav ul li a:hover {
   color: #f6ca68;
   text-decoration: none;
 }
 
-/* line 63, ../sass/_global.scss */
+/* line 67, ../sass/_global.scss */
 .contact {
   background: #ddd;
   margin: -10px;
 }
 
-/* line 68, ../sass/_global.scss */
+/* line 72, ../sass/_global.scss */
 .contact ul {
   float: right;
   font-weight: 500;
   margin: 15px 0 20px 0;
 }
-/* line 72, ../sass/_global.scss */
+/* line 76, ../sass/_global.scss */
 .contact ul li {
   display: inline;
   padding: 0 20px;
 }
-/* line 75, ../sass/_global.scss */
+/* line 79, ../sass/_global.scss */
 .contact ul li a {
   color: #777;
   font-size: 14px;
   text-decoration: none;
 }
-/* line 79, ../sass/_global.scss */
+/* line 83, ../sass/_global.scss */
 .contact ul li a:hover {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 88, ../sass/_global.scss */
+/* line 92, ../sass/_global.scss */
 .social {
   background: #02b2b0;
   width: 100%;
 }
 
-/* line 93, ../sass/_global.scss */
+/* line 97, ../sass/_global.scss */
 .social ul {
   float: left;
   margin: 30px 0;
 }
-/* line 96, ../sass/_global.scss */
+/* line 100, ../sass/_global.scss */
 .social ul li {
   display: inline;
   padding: 0px 5px;
 }
 
-/* line 103, ../sass/_global.scss */
+/* line 107, ../sass/_global.scss */
 .twitter:hover, .linkedin:hover,
 .github:hover, .dribbble:hover {
   opacity: 0.5;
 }
 
-/* line 109, ../sass/_global.scss */
+/* line 113, ../sass/_global.scss */
 .btn {
   background-color: #f76b47;
   background: none;
@@ -187,7 +192,7 @@ body, p {
   transition: all 0.3s;
 }
 
-/* line 132, ../sass/_global.scss */
+/* line 136, ../sass/_global.scss */
 .btn:after {
   content: '';
   position: absolute;
@@ -197,7 +202,7 @@ body, p {
   transition: all 0.3s;
 }
 
-/* line 141, ../sass/_global.scss */
+/* line 145, ../sass/_global.scss */
 .btn:before {
   line-height: 1;
   position: relative;
@@ -206,7 +211,7 @@ body, p {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 150, ../sass/_global.scss */
+/* line 154, ../sass/_global.scss */
 .btn-8 {
   background: #f76b47;
   display: block;
@@ -216,12 +221,12 @@ body, p {
   transform-style: preserve-3d;
 }
 
-/* line 159, ../sass/_global.scss */
+/* line 163, ../sass/_global.scss */
 .btn-8:active {
   background: #f76b47;
 }
 
-/* line 164, ../sass/_global.scss */
+/* line 168, ../sass/_global.scss */
 .btn-8a:after {
   background: #f54416;
   height: 42%;
@@ -236,7 +241,7 @@ body, p {
   -moz-transform: rotateX(90deg);
 }
 
-/* line 178, ../sass/_global.scss */
+/* line 182, ../sass/_global.scss */
 .btn-8a:hover {
   transform: rotateX(-15deg);
   -webkit-transform: rotateX(-15deg);
@@ -244,7 +249,7 @@ body, p {
   -ms-transform: rotateX(-15deg);
 }
 
-/* line 186, ../sass/_global.scss */
+/* line 190, ../sass/_global.scss */
 .btn-8b:after {
   background: #f54416;
   height: 40%;
@@ -261,7 +266,7 @@ body, p {
   -ms-transform: rotateX(-90deg);
 }
 
-/* line 202, ../sass/_global.scss */
+/* line 206, ../sass/_global.scss */
 .btn-8b:hover {
   transform: rotateX(15deg);
   -webkit-transform: rotateX(15deg);
@@ -269,7 +274,7 @@ body, p {
   -ms-transform: rotateX(15deg);
 }
 
-/* line 210, ../sass/_global.scss */
+/* line 214, ../sass/_global.scss */
 .btn-8c:after {
   background: #f54416;
   height: 100%;
@@ -286,7 +291,7 @@ body, p {
   transform: rotateY(-90deg);
 }
 
-/* line 226, ../sass/_global.scss */
+/* line 230, ../sass/_global.scss */
 .btn-8c:hover {
   -webkit-transform: rotateY(20deg);
   -moz-transform: rotateY(20deg);
@@ -294,7 +299,7 @@ body, p {
   transform: rotateY(20deg);
 }
 
-/* line 234, ../sass/_global.scss */
+/* line 238, ../sass/_global.scss */
 .btn-8d:after {
   background: #f54416;
   height: 100%;
@@ -311,7 +316,7 @@ body, p {
   transform: rotateY(90deg);
 }
 
-/* line 250, ../sass/_global.scss */
+/* line 254, ../sass/_global.scss */
 .btn-8d:hover {
   -webkit-transform: rotateY(-20deg);
   -moz-transform: rotateY(-20deg);
@@ -319,14 +324,14 @@ body, p {
   transform: rotateY(-20deg);
 }
 
-/* line 258, ../sass/_global.scss */
+/* line 262, ../sass/_global.scss */
 .color-bar {
   background: url("../images/color-bar.png");
   background-repeat: repeat-x;
   margin: -10px -10px 50px -10px;
 }
 
-/* line 264, ../sass/_global.scss */
+/* line 268, ../sass/_global.scss */
 .down-circle {
   background: #f6ca68;
   border-radius: 50%;
@@ -335,13 +340,13 @@ body, p {
   position: relative;
   width: 75px;
 }
-/* line 272, ../sass/_global.scss */
+/* line 276, ../sass/_global.scss */
 .down-circle:hover {
   background: #f3b938;
   box-shadow: 2px 2px #f9db98;
   cursor: pointer;
 }
-/* line 278, ../sass/_global.scss */
+/* line 282, ../sass/_global.scss */
 .down-circle img {
   bottom: 24px;
   left: 0;
@@ -350,61 +355,61 @@ body, p {
   right: 0;
 }
 
-/* line 287, ../sass/_global.scss */
+/* line 291, ../sass/_global.scss */
 .right {
   float: right;
 }
 
-/* line 291, ../sass/_global.scss */
+/* line 295, ../sass/_global.scss */
 .left {
   float: left;
 }
 
-/* line 295, ../sass/_global.scss */
+/* line 299, ../sass/_global.scss */
 .center {
   left: 0;
   right: 0;
 }
 
 @media only screen and (max-width: 479px) {
-  /* line 308, ../sass/_global.scss */
+  /* line 312, ../sass/_global.scss */
   .logo img {
     margin: 20px 0 10px 0;
   }
 
-  /* line 312, ../sass/_global.scss */
+  /* line 316, ../sass/_global.scss */
   .main-nav ul {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  /* line 315, ../sass/_global.scss */
+  /* line 319, ../sass/_global.scss */
   .main-nav ul li {
     display: inline;
     padding: 0px 0px 0px 30px;
   }
-  /* line 318, ../sass/_global.scss */
+  /* line 322, ../sass/_global.scss */
   .main-nav ul li a {
     color: #fff;
     font-size: 14px;
     text-decoration: none;
   }
-  /* line 322, ../sass/_global.scss */
+  /* line 326, ../sass/_global.scss */
   .main-nav ul li a:hover {
     color: #f6ca68;
     text-decoration: none;
   }
 
-  /* line 332, ../sass/_global.scss */
+  /* line 336, ../sass/_global.scss */
   .contact ul {
     margin: 20px;
   }
-  /* line 334, ../sass/_global.scss */
+  /* line 338, ../sass/_global.scss */
   .contact ul li {
     display: block;
     text-align: center;
   }
 
-  /* line 341, ../sass/_global.scss */
+  /* line 345, ../sass/_global.scss */
   .social ul li {
     display: inline;
     padding: 0px 10px;
@@ -1648,4 +1653,19 @@ or wrap each row of columns in a <div class="row"> */
   .main-large {
     background-position: 24% center;
   }
+}
+/* line 1, ../sass/_slideshow.scss */
+#slideshow {
+  margin: 10px auto 150px;
+  position: relative;
+  width: 100%;
+}
+/* line 6, ../sass/_slideshow.scss */
+#slideshow > .slide {
+  display: none;
+  position: absolute;
+}
+/* line 10, ../sass/_slideshow.scss */
+#slideshow > .slide.slide-main {
+  display: block;
 }

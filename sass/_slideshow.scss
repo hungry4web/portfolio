@@ -1,0 +1,14 @@
+#slideshow {
+  margin: 10px auto 150px; 
+  position: relative;
+  width: 100%;
+
+  & > .slide { 
+    display: none;
+    position: absolute;
+
+    &.slide-main{
+      display: block;
+    }
+  }
+}
