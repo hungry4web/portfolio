@@ -78,30 +78,23 @@ h2 {
 .feature-block{
   position: relative;
 
+  img{
+    @include transition(0.2s, all, ease-in);
+    &:hover{ opacity: 0; }
+  }
 
-%feature {
-    height: 200px;
-    left: -7px;
-    @include skew (9, 0);
-    position: absolute;
-    width: 265px;
-    z-index: -1;
-
+  .inner-block{
+    padding: 1.3em;
   }
 
   .feature-1 {
     background-color: $secondary-color;
     height: 200px;
-  
     @include skew (7,3);
     position: absolute;
     left: -5px;
     width: 265px;
     z-index: -1;
-    &:hover > a img {
-    display: none;
-            }
-    
   }
 
   .feature-2 {

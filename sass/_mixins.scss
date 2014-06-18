@@ -25,9 +25,16 @@
 }
 //transform origin
 @mixin transform-origin ($origin) {
-    moz-transform-origin: $origin;
+    -moz-transform-origin: $origin;
 	     -o-transform-origin: $origin;
 	    -ms-transform-origin: $origin;
 	-webkit-transform-origin: $origin;
           transform-origin: $origin;
+}
+//transition
+@mixin transition($time: .1s, $range: all, $ease: ease-in) {
+  -moz-transition: $range .2s $ease;
+  -webkit-transition: $range .1s $ease;
+  -o-transition: $range $time $ease;
+  transition: $range $time $ease;
 }
