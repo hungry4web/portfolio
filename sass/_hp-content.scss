@@ -73,18 +73,28 @@ h2 {
     font-size: 18px;
     font-weight: 500;
     line-height: 34px;
+    margin-top:35px;
 }
 
 .feature-block{
   position: relative;
+  margin-bottom: 50px;
+ 
+  h5{ font-family: $raleway; }
 
   img{
+    position: relative;
     @include transition(0.2s, all, ease-in);
-    &:hover{ opacity: 0; }
+    z-index: 3;
+
+    &:hover{ 
+      opacity: 0; 
+      z-index: -1;
+    }
   }
 
   .inner-block{
-    padding: 1.3em;
+    padding: 1.7em;
   }
 
   .feature-1 {
@@ -94,7 +104,13 @@ h2 {
     position: absolute;
     left: -5px;
     width: 265px;
-    z-index: -1;
+    z-index: 1;
+  }
+
+    .inner-block-1 {
+    padding: 1.7em;
+    @include skew (-7,-3);
+    position: absolute;
   }
 
   .feature-2 {
@@ -105,10 +121,13 @@ h2 {
     @include skew (2, 4);
     position: absolute;
     width: 265px;
-    z-index: -1;
-    &:hover > a img {
-    display: none;
-            }
+    z-index: 2;
+  }
+
+    .inner-block-2 {
+    padding: 1.7em;
+    @include skew (-2,-4);
+    position: absolute;
   }
 
   .feature-3 {
@@ -122,9 +141,20 @@ h2 {
   }
 }
 
+    .inner-block-3 {
+      padding: 1.7em;
+      @include skew (7,3);
+      position: absolute;
+    }
+
+  .body-white {
+    color:#fff;
+    font-weight: 500;
+}
+
 .testimonials {
 	background: lighten($secondary-color, 10%);
-  padding: 0 0 60px 0;
+  padding: 0 0 120px 0;
 	text-align: center;
 }
 // RESPONSIVE TABLET 

@@ -29,6 +29,7 @@ body, p {
 
 
 
+
 // 2.HEADER NAV 
 .logo {
   float: left;
@@ -66,13 +67,12 @@ body, p {
 
 .contact {
   background: #ddd;
-  margin:-10px;
 }
 
 .contact ul {
   float: right;
   font-weight: 500;
-  margin:15px 0 20px 0;
+  margin:15px 0;
   li {
     display:inline;
     padding: 0 20px;
@@ -99,17 +99,41 @@ body, p {
   margin: 30px 0;
   li {
    display:inline;
-   padding: 0px 5px;    
+   padding: 0px 3px;    
     }
 }
 
 .twitter:hover, .linkedin:hover,
-.github:hover, .dribbble:hover, {
+.github:hover, .dribbble:hover, .behance:hover {
   opacity: 0.5;
 }
 
+// 5. BUTTONS
+.btn-transp {
+  border: 1px solid #fff;
+  color: #fff;
+  display: inline-block;
+  font: {
+    family: $body-font-family;
+    size: 14px;
+    weight: 500;
+  }
+  letter-spacing: 1px;
+  margin: 30px;
+  padding: 10px 15px;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 
-// 5. 3D BUTTONS
+  &:hover{
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+// 3D BUTTONS
 .btn {
   background-color: $button-color;
   background: none;
