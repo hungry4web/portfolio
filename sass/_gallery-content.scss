@@ -1,0 +1,25 @@
+// GALLERY
+
+.gallery-circle {
+  background: $fourth-color;
+  border-radius: 50%;
+  box-shadow: 2px 2px darken($fourth-color, 10%);
+  height: 45px;
+  position: relative;
+  width: 45px;
+
+  &:hover{
+    background: darken($fourth-color, 10%);
+    box-shadow: 2px 2px lighten($fourth-color, 10%);
+    cursor: pointer;
+
+  }
+
+  i {
+    bottom: 7px;
+    color: #fff;
+    padding-right: 17px;
+    position: absolute;
+    right:0;
+  }
+}

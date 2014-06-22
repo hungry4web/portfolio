@@ -1,0 +1,233 @@
+//PORTFOLIO PAGE STYLES
+
+.main-large-port {
+	background: $primary-color url('../images/port-main-image.jpg') center center;
+  background-size: cover; 
+  -moz-background-size: cover;
+  line-height: 10px;
+  min-height: 400px;
+  text-align: center;
+
+h1 {
+  color: #fff;
+  font: {
+    family: $merriweather;
+    size: $h1-font-size;
+    weight: 700;
+  }
+  margin-top: 90px;
+    text-shadow: 3px 3px darken($primary-color, 10%);
+    @media only screen and (max-width: 479px) {
+      font-size: 53px;
+      line-height: 55px;
+    }
+  }
+
+  h2 {
+  color: #fff;
+  font: {
+    family: $raleway;
+    size: $h2-font-size;
+    weight: 600;
+  }
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text: {
+      shadow: 2px 2px darken($primary-color, 10%);
+      transform: uppercase;
+      }
+       @media only screen and (max-width: 479px) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+}
+
+
+.port-block{
+  position: relative;
+  margin-bottom: 50px;
+ 
+  h5{ font-family: $raleway; }
+
+  img{
+    position: relative;
+    @include transition(0.2s, all, ease-in);
+    z-index: 3;
+
+    &:hover{ 
+      opacity: 0; 
+      z-index: -1;
+    }
+  }
+
+  .inner-block{
+    padding: 1.7em;
+  }
+
+  .port-1 {
+    background-color: $third-color;
+    height: 179px;
+    position: absolute;
+    left: -5px;
+    width: 255px;
+    z-index: 1;
+  }
+
+.tile-container {
+position:relative;
+} 
+
+.tile-container .tile-textbox {
+width:100%; 
+height:77%; 
+overflow: hidden;
+position:absolute; 
+top:0; left:0; 
+/*-webkit-transform: scale(0); 
+transform: scale(0); */
+
+
+} 
+
+.tile-container:hover .tile-textbox {
+/*-webkit-transform: scale(1); 
+transform: scale(1);*/
+background-color: $third-color; 
+opacity: .90;
+} 
+
+.tile-text {
+  color: #fff;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.tile-textbox {
+  -webkit-transition: all .7s ease; 
+  transition: all .7s ease;
+}
+
+.icons {
+  margin-bottom: 30px;
+}
+
+ .down-circle-p{
+    margin: 0 auto;
+    position: relative;
+    bottom: -40px;
+  }
+
+// Tooltips
+
+[data-tooltip],
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after {
+  position: absolute;
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: 
+    opacity 0.2s ease-in-out,
+    visibility 0.2s ease-in-out,
+    -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -moz-transition:    
+    opacity 0.2s ease-in-out,
+    visibility 0.2s ease-in-out,
+    -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  transition:         
+    opacity 0.2s ease-in-out,
+    visibility 0.2s ease-in-out,
+    transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform:    translate3d(0, 0, 0);
+  transform:         translate3d(0, 0, 0);
+  pointer-events: none;
+}
+
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after,
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+
+.tooltip:before,
+[data-tooltip]:before {
+  z-index: 1001;
+  border: 6px solid transparent;
+  background: transparent;
+  content: "";
+}
+
+
+.tooltip:after,
+[data-tooltip]:after {
+  z-index: 1000;
+  padding: 8px;
+ 
+  background-color: $secondary-color;
+  border-radius:5px;
+  opacity: .9;
+  color: #fff;
+  content: attr(data-tooltip);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after,{
+  bottom: 100%;
+  left: 50%;
+}
+
+[data-tooltip]:before,
+.tooltip:before, {
+  margin-left: -6px;
+  margin-bottom: -12px;
+  border-top-color: $secondary-color;
+  border-top-color: $secondary-color;
+}
+
+
+[data-tooltip]:after,
+.tooltip:after {
+  margin-left: -80px;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after,
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after,
+ {
+  -webkit-transform: translateY(-12px);
+  -moz-transform:    translateY(-12px);
+  transform:         translateY(-12px); 
+}
+}
+  

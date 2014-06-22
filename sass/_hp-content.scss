@@ -7,6 +7,9 @@
   line-height: 10px;
   min-height: 700px;
   text-align: center;
+  @media only screen and (max-width: 479px) {
+       background-position: 24% center;
+    }
 
 h1 {
   color: #fff;
@@ -15,6 +18,7 @@ h1 {
     size: $h1-font-size;
     weight: 700;
   }
+  margin-top:90px;
     text-shadow: 3px 3px darken($primary-color, 10%);
     @media only screen and (max-width: 479px) {
       font-size: 53px;
@@ -42,12 +46,15 @@ h2 {
   }
 }
 
-  .down-circle{
+  .down-circle-hp{
     margin: 0 auto;
+    position: relative;
+    bottom: -40px;
   }
 
 
 .favorites {
+  
   margin-top:10px;
   margin-bottom:65px;
 	text-align: center;
@@ -156,6 +163,9 @@ h2 {
 	background: lighten($secondary-color, 10%);
   padding: 0 0 120px 0;
 	text-align: center;
+  @media only screen and (max-width: 479px) {
+       display: none;
+    }
 }
 // RESPONSIVE TABLET 
 
@@ -163,11 +173,5 @@ h2 {
 
     
   }
-
-   @media only screen and (max-width: 479px) {
-  .main-large {
-    background-position: 24% center;
-  }
-}
 
 
