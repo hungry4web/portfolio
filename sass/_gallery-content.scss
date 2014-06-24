@@ -1,11 +1,38 @@
 // GALLERY
 
+.main-gallery {
+  padding-top:10px;
+   margin-top:160px;
+  @media only screen and (max-width: 479px) {
+      margin-top: 220px;
+    }
+  margin-bottom:65px;
+  text-align: center;
+    }
+
+  h3 {
+    color: $header-font-color-off;
+    font: {
+      family: $header-font-family;
+      size: $h3-font-size;
+      weight: 400;
+    }
+    letter-spacing: 1px;
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+}
+
+
 .gallery-circle {
   background: $fourth-color;
   border-radius: 50%;
   box-shadow: 2px 2px darken($fourth-color, 10%);
   height: 45px;
   position: relative;
+margin-top:10px;
+margin-bottom:10px;
   width: 45px;
 
   &:hover{
@@ -23,3 +50,4 @@
     right:0;
   }
 }
+

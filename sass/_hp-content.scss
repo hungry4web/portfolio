@@ -22,7 +22,7 @@ h1 {
     text-shadow: 3px 3px darken($primary-color, 10%);
     @media only screen and (max-width: 479px) {
       font-size: 53px;
-      line-height: 55px;
+      line-height: 57px;
     }
   }
 
@@ -54,7 +54,6 @@ h2 {
 
 
 .favorites {
-  
   margin-top:10px;
   margin-bottom:65px;
 	text-align: center;
@@ -72,10 +71,8 @@ h2 {
       transform: uppercase;
     }
 } 
-
-
-
 }
+
  .quote {
     font-size: 18px;
     font-weight: 500;
@@ -86,6 +83,8 @@ h2 {
 .feature-block{
   position: relative;
   margin-bottom: 50px;
+
+  
  
   h5{ font-family: $raleway; }
 
@@ -93,6 +92,9 @@ h2 {
     position: relative;
     @include transition(0.2s, all, ease-in);
     z-index: 3;
+    @media only screen and (max-width: 479px) {
+       margin:30px;
+    }
 
     &:hover{ 
       opacity: 0; 
@@ -125,6 +127,9 @@ h2 {
     height: 200px;
     left: 2px;
     bottom: 1px;
+    @media only screen and (max-width: 479px) {
+       bottom:37px;
+    }
     @include skew (2, 4);
     position: absolute;
     width: 265px;
@@ -161,17 +166,12 @@ h2 {
 
 .testimonials {
 	background: lighten($secondary-color, 10%);
-  padding: 0 0 120px 0;
+  padding: 0px 0 120px 0;
 	text-align: center;
   @media only screen and (max-width: 479px) {
        display: none;
     }
-}
-// RESPONSIVE TABLET 
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
     
-  }
+}
 
 

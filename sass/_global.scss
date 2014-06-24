@@ -7,8 +7,7 @@
 // 4. SOCIAL BAR
 // 5. 3D BUTTONS
 // 6. MISC
-// 7. RESPONSIVE MOBILE
-// 8. RESPONSIVE TABLET
+
 
 html, body{
   overflow-x: hidden;
@@ -32,10 +31,14 @@ body, p {
   float: left;
   margin: 20px 0 0px 10px; 
 
-  @media only screen and (max-width: 479px) {
-  margin: 30px 0 10px 0;  
-  }
+@media only screen and (max-width: 479px) {
+  padding-top:30px;
 }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    padding-top:30px;
+  }
+} 
+
 
 .main-nav{
   margin:-10px;
@@ -58,7 +61,33 @@ body, p {
             }
         }
     }
+  }
+
+
+
+@media only screen and (max-width: 479px) {
+.main-nav ul {
+  float: none;
+    margin-top: 30px;
+    margin-bottom:30px;
+    @media only screen and (max-width: 479px) {
+  margin-bottom:0px;
 }
+
+  li {
+    display:inline;
+    padding: 0px 10px 0px 10px;
+   
+        }
+    }
+  }
+
+/*FIXED .main-small {
+  width:100%;
+  background: $primary-color;
+  min-height: 135px;
+}*/
+
 
 .main-small {
   position: fixed;
@@ -67,6 +96,10 @@ body, p {
   width:100%;
   background: $primary-color;
   min-height: 135px;
+
+  @media only screen and (max-width: 479px) {
+  min-height: 50px;
+}
 }
 
 // 3. CONTACT BAR 
@@ -79,9 +112,19 @@ body, p {
   float: right;
   font-weight: 500;
   margin:15px 0;
+  @media only screen and (max-width: 479px) {
+        float: none;
+      }
   li {
     display:inline;
     padding: 0 20px;
+    @media only screen and (max-width: 479px) {
+      display: block;
+      text-align: center;}
+  }
+      
+
+
     a {
       color:#777;
       font-size: 14px;
@@ -91,23 +134,38 @@ body, p {
         text-decoration: none;
             }
         }
-    }
 }
+
+
+
 
 // 4. SOCIAL BAR 
 .social {
   background: $primary-color;
   width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .social ul {
-  float: left;
   margin: 30px 0;
+
+  @media only screen and (max-width: 479px) {
+        margin:30px 0 0 0;
+      }
   li {
    display:inline;
-   padding: 0px 3px;    
+   padding: 0px 3px; 
+   
+
+   @media only screen and (max-width: 479px) {
+        margin: 0 auto;
+        padding: 5px;
+      }   
     }
 }
+
+
 
 .twitter:hover, .linkedin:hover,
 .github:hover, .dribbble:hover, .behance:hover {
@@ -122,11 +180,11 @@ body, p {
   font: {
     family: $body-font-family;
     size: 14px;
-    weight: 500;
+    weight: 700;
   }
   letter-spacing: 1px;
-  margin: 30px;
-  padding: 10px 15px;
+  margin: 20px 15px 0 15px;
+  padding: 5px 10px;
   position: relative;
   text-transform: uppercase;
   -webkit-transition: all 0.3s;
@@ -154,10 +212,14 @@ body, p {
   }
   letter-spacing: 1px;
   margin: 30px;
+   @media only screen and (max-width: 479px) {
+        margin:20px;
+      }
   outline: none;
   padding: 10px 15px;
   position: relative;
   text-transform: uppercase;
+  text-align: center;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -289,19 +351,18 @@ body, p {
 }
 
 // 6. MISC 
-.color-bar {
+.color-bar-sm {
   background: url('../images/color-bar.png');
   background-repeat: repeat-x;
     margin: 0px -10px 0px -10px;
-    position: absolute;
+    position: relative;
     bottom: -20px;
 }
 
-.color-bar2 {
+.color-bar {
   background: url('../images/color-bar.png');
   background-repeat: repeat-x;
-    margin: -10px -10px 80px -10px;
-
+  margin: -10px -10px 80px -10px;
 }
 
 .down-circle-hp, .down-circle-p {
@@ -329,68 +390,28 @@ body, p {
 
 .right { 
   float: right;
+  @media only screen and (max-width: 479px) {
+        float:none; 
+  }
 }
 
 .left { 
   float: left;
-}
-
-.center {
-    left: 0;
-    right: 0;
-}
-
-
-// 7. RESPONSIVE MOBILE 
-
-
-@media only screen and (max-width: 479px) {
-
-
-
-.logo img {
-  margin: 20px 0 10px 0;  
-}
-
-.main-nav ul {
-    margin-top: 30px;
-    margin-bottom:30px;
-  li {
-    display:inline;
-    padding: 0px 0px 0px 30px;
-    a {
-      color: #fff;
-      font-size: 14px;
-      text-decoration: none;
-      &:hover {
-        color: $secondary-color;
-        text-decoration: none;
-            }
-        }
-    }
+  @media only screen and (max-width: 479px) {
+        float:none; 
   }
-
-
-
-.contact ul {
-        margin: 20px;
-    li {
-      display: block;
-      text-align: center;
-      }
-    }
-
-.social ul {
-    li {
-      display:inline;
-      padding: 0px 10px;
-
-      @media only screen and (max-width: 479px) {
-        padding: 0px 3px;  
-  
-  }
-    }
 }
+
+.center { 
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
+
+
+
+
+
+
 
 
