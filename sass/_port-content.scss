@@ -1,5 +1,91 @@
 //PORTFOLIO PAGE STYLES
 
+.gallery-box {
+ 
+   display: inline-block;
+  
+  position: relative;
+ 
+}
+
+.overlay {
+  -webkit-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+  -moz-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+  -o-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none;
+  width: 220px;
+  height: 155px; 
+}
+
+  .overlay span {
+    -webkit-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -moz-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -o-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transform: translateY(50px);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    opacity: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    width: 100px;
+    margin-top: -24px;
+    margin-left: -60px;
+    left: 50%;
+    top: 50%;
+    padding: 5px;
+    border: 1px solid white;
+    color: white; 
+  }
+    .overlay:hover, .overlay:focus {
+    background-color: $third-color;
+    background-color: rgba($third-color, 0.9);
+    -webkit-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -moz-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -o-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1); 
+  }
+    .no-touch .overlay:hover span, .overlay:focus span {
+      -webkit-transition: -webkit-transform 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+      -moz-transition: -moz-transform 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+      -o-transition: -o-transform 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+      transition: transform 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      -o-transform: translateY(0px);
+      transform: translateY(0px);
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1; 
+    }
+
+.btn-overlay {
+  border: 1px solid #fff;
+  color: #fff;
+  font: {
+    family: $body-font-family;
+    size: 14px;
+    weight: 700;
+  }
+  letter-spacing: 1px;
+}
+
+
+
+
+
 .main-large-port {
 	background: $primary-color url('../images/port-main-image.jpg') center center;
   background-size: cover; 
@@ -105,28 +191,29 @@ h1 {
 }
 
 
-
 .icons {
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
 
-  @media only screen and (max-width: 479px) {
-    margin: 0 0 25px 0;
-  }
 
   a i {
     display: inline-block;
     margin-right: 20px;
     color: #777;
-    &.last{ margin-right: 0; }
-    &:hover{color:$secondary-color}
+    &.last{ 
+      margin-right: 0; 
+    }
+    &:hover{
+      color:$secondary-color;
+    }
   }
-  }
+}
+  
 
  .down-circle-p{
     margin: 0 auto;
     position: relative;
     bottom: -40px;
-  }
+}
 
 // Tooltips
 
@@ -241,5 +328,5 @@ h1 {
   -moz-transform:    translateY(-12px);
   transform:         translateY(-12px); 
 }
-}
-  
+
+  }

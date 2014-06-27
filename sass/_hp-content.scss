@@ -5,7 +5,7 @@
   background-size: cover; 
   -moz-background-size: cover;
   line-height: 10px;
-  min-height: 700px;
+  min-height: 400px;
   text-align: center;
   @media only screen and (max-width: 479px) {
        background-position: 24% center;
@@ -80,84 +80,158 @@ h2 {
     margin-top:35px;
 }
 
-.feature-block{
+
+// FAVS CASE STUDIES
+.feature-block-1{
   position: relative;
   margin-bottom: 50px;
 
-  
- 
-  h5{ font-family: $raleway; }
-
-  img{
-    position: relative;
-    @include transition(0.2s, all, ease-in);
-    z-index: 3;
+   img{
     @media only screen and (max-width: 479px) {
        margin:30px;
     }
+  }
 
-    &:hover{ 
-      opacity: 0; 
-      z-index: -1;
+  h5{ font-family: $raleway; }
+
+  .top-block {
+    position: relative;
+    @include transition(0.2s, all, ease-in);
+    z-index: 3;
+
+    &:hover{
+      opacity: 0;
+      z-index: 1;
     }
   }
 
-  .inner-block{
-    padding: 1.7em;
-  }
-
-  .feature-1 {
+  .back-block-1 {
     background-color: $secondary-color;
     height: 200px;
     @include skew (7,3);
     position: absolute;
     left: -5px;
-    width: 265px;
-    z-index: 1;
-  }
-
-    .inner-block-1 {
-    padding: 1.7em;
-    @include skew (-7,-3);
-    position: absolute;
-  }
-
-  .feature-2 {
-   background-color: $primary-color;
-    height: 200px;
-    left: 2px;
-    bottom: 1px;
-    @media only screen and (max-width: 479px) {
-       bottom:37px;
-    }
-    @include skew (2, 4);
-    position: absolute;
+    top: 0;
     width: 265px;
     z-index: 2;
-  }
 
-    .inner-block-2 {
-    padding: 1.7em;
-    @include skew (-2,-4);
-    position: absolute;
-  }
+    &:hover{
+      z-index: 4;
+      color: #fff;
+    }
 
-  .feature-3 {
-   background-color: $secondary-color;
-    height: 200px;
-    right: -7px;
-    @include skew (-7, -3);
-    position: absolute;
-    width: 265px;
-    z-index: -1;
+    .inner-back-block-1{
+      @include skew (-7,-3);
+      padding: 30px 20px;
+
+      .btn-transp{
+        margin: 10px;
+        color: #fff;
+      }
+    }
   }
 }
 
-    .inner-block-3 {
-      padding: 1.7em;
-      @include skew (7,3);
-      position: absolute;
+.feature-block-2{
+  position: relative;
+  margin-bottom: 50px;
+    bottom: 11px;
+
+    img{
+    @media only screen and (max-width: 479px) {
+       margin:23px;
     }
+  }
+
+  h5{ font-family: $raleway; }
+
+  .top-block {
+    position: relative;
+    @include transition(0.2s, all, ease-in);
+    z-index: 3;
+
+    &:hover{
+      opacity: 0;
+      z-index: 1;
+    }
+  }
+
+  .back-block-2 {
+    background-color: $primary-color;
+    height: 200px;
+    @include skew (2,4);
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 265px;
+    z-index: 2;
+
+    &:hover{
+      z-index: 4;
+      color: #fff;
+    }
+
+    .inner-back-block-2{
+      @include skew (-2,-4);
+      padding: 30px 20px;
+
+      .btn-transp{
+        margin: 10px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.feature-block-3{
+  position: relative;
+  margin-bottom: 50px;
+
+   img{
+    @media only screen and (max-width: 479px) {
+       margin:30px;
+    }
+  }
+
+  h5{ font-family: $raleway; }
+
+  .top-block {
+    position: relative;
+    @include transition(0.2s, all, ease-in);
+    z-index: 3;
+
+    &:hover{
+      opacity: 0;
+      z-index: 1;
+    }
+  }
+
+  .back-block-3 {
+    background-color: $secondary-color;
+    height: 200px;
+    @include skew (-7,-3);
+    position: absolute;
+    right: 7px;
+    top: 0;
+    width: 265px;
+    z-index: 2;
+
+    &:hover{
+      z-index: 4;
+      color: #fff;
+    }
+
+    .inner-back-block-3{
+      @include skew (7,3);
+      padding: 30px 20px;
+
+      .btn-transp{
+        margin: 10px;
+        color: #fff;
+      }
+    }
+  }
+}
 
   .body-white {
     color:#fff;
@@ -173,5 +247,3 @@ h2 {
     }
     
 }
-
-
