@@ -84,11 +84,13 @@ h2 {
 // FAVS CASE STUDIES
 .feature-block-1{
   position: relative;
+  margin-top: 50px;
   margin-bottom: 50px;
 
    img{
+    border-radius: $border-radius;
     @media only screen and (max-width: 479px) {
-       margin:30px;
+       margin:20px;
     }
   }
 
@@ -125,8 +127,14 @@ h2 {
       padding: 30px 20px;
 
       .btn-transp{
-        margin: 10px;
+        margin: 5px;
         color: #fff;
+        a  {
+    color: #fff;
+    }
+    &:hover{
+      color:#fff;
+    }
       }
     }
   }
@@ -134,12 +142,17 @@ h2 {
 
 .feature-block-2{
   position: relative;
+   margin-top: 50px;
   margin-bottom: 50px;
-    bottom: 11px;
+    bottom: 18px;
+    @media only screen and (max-width: 479px) {
+       bottom:-10px;
+    }
 
     img{
+      border-radius: $border-radius;
     @media only screen and (max-width: 479px) {
-       margin:23px;
+       margin:0px;
     }
   }
 
@@ -149,6 +162,7 @@ h2 {
     position: relative;
     @include transition(0.2s, all, ease-in);
     z-index: 3;
+    bottom: -18px;
 
     &:hover{
       opacity: 0;
@@ -158,11 +172,12 @@ h2 {
 
   .back-block-2 {
     background-color: $primary-color;
+    bottom: 18px;
     height: 200px;
     @include skew (2,4);
     position: absolute;
     left: -5px;
-    top: 0;
+    top: -5px;
     width: 265px;
     z-index: 2;
 
@@ -176,7 +191,7 @@ h2 {
       padding: 30px 20px;
 
       .btn-transp{
-        margin: 10px;
+        margin: 5 px;
         color: #fff;
       }
     }
@@ -185,11 +200,16 @@ h2 {
 
 .feature-block-3{
   position: relative;
+   margin-top: 50px;
   margin-bottom: 50px;
+@media only screen and (max-width: 479px) {
+       bottom:-50px;
+    }
 
    img{
+    border-radius: $border-radius;
     @media only screen and (max-width: 479px) {
-       margin:30px;
+       margin:20px;
     }
   }
 
@@ -233,9 +253,17 @@ h2 {
   }
 }
 
+.hp-buttons-dt {
+  @media only screen and (max-width: 479px) {
+       display: none;
+    }
+}
+
+
   .body-white {
     color:#fff;
     font-weight: 500;
+    line-height: 18px;
 }
 
 .testimonials {

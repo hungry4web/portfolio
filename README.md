@@ -9,8 +9,7 @@
 
 ## Homepage
 - Fixed nav bar at the top
-- The buttons **place your order, contact, and work with me** all will link to one contact page - I like the concept behind the contact page on [the Focus Lab website](http://focuslabllc.com/contact) -- I'd like to do something similarly creative, though maybe less complicated
-
+- The buttons **place your order, contact, and work with me** all will link to one contact page
 - Diner Favorites are 3 feature portfolio pieces, with rollover effects that brings the shape forward with text on top and a link to the case study page
 - Button link to check out the Full Portfolio emphasized below the case studies
 - The Testimonials div will be a gallery of 3-5 quotes to scroll through
@@ -32,17 +31,12 @@
 - Hmmm...
 
 ## Portfolio
-- Portfolio pieces as tile elements which can be sorted by categories, with rollovers similar to the tiles at the bottom of [Rule29's page](http://rule29.com/creative-matter/be-the-one/ "Check it out")
-- Categories of: website design, email marketing, web banners, logo, print, the best - I'd like to try to design icons for these, I've been inspired by the Rule29 site
+- Portfolio pieces as tile elements which will have categories, with rollovers 
+- Categories of: website design, email marketing, web banners, logo, print - I'll use font awesome for these icons
 
 ## Contact
 - Basic contact information
-- Contact form but in a creative way with options since the buttons leading to this page will be  **place your order, contact, and work with me** -- Inspired by this page from [the Focus Lab website](http://focuslabllc.com/contact) -- I'd like to do something similarly creative, though maybe less complicated
-
-
-## Services
-- Menu of skills and services
-- Links to: full portfoilo page and Work With Me (contact) page
+- Contact form 
 
 
 
