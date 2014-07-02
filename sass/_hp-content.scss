@@ -24,6 +24,10 @@ h1 {
       font-size: 53px;
       line-height: 57px;
     }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      line-height: 68px;
+    }
   }
 
 h2 {
@@ -257,10 +261,25 @@ h2 {
   @media only screen and (max-width: 479px) {
        display: none;
     }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      display: none;
+    }
+}
+
+.hp-button-box {
+  @media only screen and (max-width: 479px) {
+       margin-top:65px;
+    }
+
+     @media only screen and (min-width: 480px) and (max-width: 767px) {
+      margin-top:65px;
+    }
+
 }
 
 
-  .body-white {
+.body-white {
     color:#fff;
     font-weight: 500;
     line-height: 18px;
@@ -268,10 +287,14 @@ h2 {
 
 .testimonials {
 	background: lighten($secondary-color, 10%);
-  padding: 0px 0 120px 0;
+  padding: 0 0 160px 0;
 	text-align: center;
   @media only screen and (max-width: 479px) {
        display: none;
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      display: none;
     }
     
 }

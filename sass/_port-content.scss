@@ -5,6 +5,7 @@
    position: relative; 
 }
 
+/*
 .overlay {
   -webkit-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
   -moz-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -79,10 +80,7 @@
   padding: 5px;
   text-align: center;
   width: 75px;
-}
-
-
-
+}*/
 
 
 .main-large-port {
@@ -105,6 +103,10 @@ h1 {
     @media only screen and (max-width: 479px) {
       font-size: 53px;
       line-height: 57px;
+    }
+
+     @media only screen and (min-width: 480px) and (max-width: 767px) {
+     line-height: 68px;
     }
   }
 
@@ -130,7 +132,6 @@ h1 {
 
 
 .port-block{
-
 
   .inner-block{
     padding: 0;
@@ -180,8 +181,7 @@ h1 {
 .icons {
   margin: 40px 0 0 0;
   
- @media only screen and (max-width: 479px) {
-    margin: 5px 0 25px 0;}
+ 
 
   a i {
     display: inline-block;
@@ -325,6 +325,14 @@ h1 {
 
   img {
     border-radius: $border-radius;
+
+    @media only screen and (max-width: 479px) {
+margin-bottom: 75px;
+  }
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  margin-bottom: 75px;
+}
   }
 
   
@@ -352,6 +360,14 @@ h1 {
     z-index: 2;
     border-radius: $border-radius;
 
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      left: 8px;
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      left: 100px;
+    }
+
     &:hover{
       z-index: 4;
       color: #fff;
@@ -370,7 +386,9 @@ h1 {
 }
 
 .radius {
-  img{border-radius: $border-radius;}
+  img{
+    border-radius: $border-radius;
+}
 }
 
 .port-ro {

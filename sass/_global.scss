@@ -29,13 +29,17 @@ body, p {
 // 2.HEADER NAV 
 .logo {
   float: left;
-  margin: 20px 0 0px 10px; 
+  margin: 20px 0 0 10px; 
 
 @media only screen and (max-width: 479px) {
   padding-top:20px;
 }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     padding-top:20px;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    
   }
 } 
 
@@ -63,37 +67,56 @@ body, p {
     }
   }
 
-
-
 @media only screen and (max-width: 479px) {
 .main-nav ul {
   float: none;
+    margin: 20px 0 0 0;
+    text-align: center;
+  li {
+    display:inline;
+    padding: 0px 10px 0px 10px;
+        }
+    }
+  }
+
+
+
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.main-nav ul {
+  float: none;
     margin-top: 30px;
-    margin-bottom:30px;
-    @media only screen and (max-width: 479px) {
-      margin-top: 10px;
-  margin-bottom:0px;
-}
+    margin-bottom:1px;
+    text-align: center;
 
   li {
     display:inline;
     padding: 0px 10px 0px 10px;
+
    
         }
     }
   }
 
-.main-small {
+/*FIXED.main-small {
   position: fixed;
   top:0;
   z-index:1;
   width:100%;
   background: $primary-color;
-  min-height: 135px;
+  min-height:135px;
 
-  @media only screen and (max-width: 479px) {
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    min-height:65px;
+  }
+}*/
+
+.main-small {
+  width:100%;
+  background: $primary-color;
+
+
   
-}
 }
 
 // 3. CONTACT BAR 
@@ -109,13 +132,24 @@ body, p {
   @media only screen and (max-width: 479px) {
         float: none;
       }
+
+       @media only screen and (min-width: 480px) and (max-width: 767px) {
+      float: none;
+    }
   li {
     display:inline;
     padding: 0 20px;
     @media only screen and (max-width: 479px) {
       display: block;
-      text-align: center;}
+      text-align: center;
+     }
   }
+
+   @media only screen and (min-width: 480px) and (max-width: 767px) {
+      display: block;
+      text-align:center;
+       padding: 0 100px;
+    }
       
 
 
@@ -147,6 +181,10 @@ body, p {
   @media only screen and (max-width: 479px) {
         margin:30px 0 0 0;
       }
+
+      @media only screen and (min-width: 480px) and (max-width: 767px) {
+      margin: 20px 0 0 0;
+    }
   li {
    display:inline;
    padding: 0px 3px; 
@@ -219,6 +257,10 @@ body, p {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+
+  &:visited{
+    color: $secondary-color;
+  }
 }
 
 .btn:after {
@@ -249,6 +291,7 @@ body, p {
 }
 
 .btn-8:active {
+  color: $secondary-color;
   background: $button-color;
 }
 
@@ -389,12 +432,20 @@ body, p {
   @media only screen and (max-width: 479px) {
         float:none; 
   }
+
+   @media only screen and (min-width: 480px) and (max-width: 767px) {
+      float: none;
+    }
 }
 
 .left { 
   float: left;
   @media only screen and (max-width: 479px) {
         float:none; 
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    float: none;
   }
 }
 
