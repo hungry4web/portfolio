@@ -95,8 +95,12 @@ h2 {
     border-radius: $border-radius;
     @media only screen and (max-width: 479px) {
        margin:20px;
-    }
+     }
+     @media only screen and (min-width: 480px) and (max-width: 767px) {
+      margin-bottom:40px;
+     }
   }
+
 
   h5{ font-family: $raleway; }
 
@@ -120,7 +124,15 @@ h2 {
     top: 0;
     width: 265px;
     z-index: 2;
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+left: 50px;
+}
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  width:235px;
+   height:190px;
+  top: -10px;
+}
     &:hover{
       z-index: 4;
       color: #fff;
@@ -158,6 +170,9 @@ h2 {
     @media only screen and (max-width: 479px) {
        margin:0px;
     }
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      margin-bottom:40px;
+     }
   }
 
   h5{ font-family: $raleway; }
@@ -184,6 +199,17 @@ h2 {
     top: -5px;
     width: 265px;
     z-index: 2;
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+left: 65px;
+top:12px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  width:235px;
+  height:190px;
+  top: 10px;
+}
 
     &:hover{
       z-index: 4;
@@ -239,6 +265,16 @@ h2 {
     top: 0;
     width: 265px;
     z-index: 2;
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+right: 65px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  width:235px;
+  height:190px;
+  top: -10px;
+}
 
     &:hover{
       z-index: 4;
