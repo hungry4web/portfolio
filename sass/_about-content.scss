@@ -1,0 +1,29 @@
+//ABOUT STYLES
+
+.main-about {
+  margin-top:40px;
+  margin-bottom:65px;
+  padding-top:10px;
+
+   img {
+    border-radius: $border-radius;
+  }
+
+	@media only screen and (max-width: 479px) {
+    text-align: center;
+  }
+
+  h3 {
+    color: $header-font-color-off;
+    font: {
+    family: $header-font-family;
+    size: $h3-font-size;
+    weight: 400;
+  }
+    letter-spacing: 1px;
+    text: {
+      align: center;
+      transform: uppercase;
+      }
+      }
+    }

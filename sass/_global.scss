@@ -1,0 +1,451 @@
+//GLOBAL STYLES
+
+
+// 1. TYPOGRAPHY
+// 2. HEADER NAV
+// 3. CONTACT BAR
+// 4. SOCIAL BAR
+// 5. 3D BUTTONS
+// 6. MISC
+
+
+html, body{
+  overflow-x: hidden;
+}
+ 
+// 1.TYPOGRAPHY 
+
+body, p {
+  color: $body-font-color;
+  font: {
+    family: $body-font-family;
+    size: 14px;
+    weight: 400;
+  }
+  line-height: 20px;
+}
+
+// 2.HEADER NAV 
+.logo {
+  float: left;
+  margin: 20px 0 0 10px; 
+
+@media only screen and (max-width: 479px) {
+  padding-top:20px;
+}
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    float: none;
+    padding-top:20px;
+    margin: 0 auto;
+    text-align: center; 
+  }
+} 
+
+.main-nav{
+  margin:-10px;
+}
+
+.main-nav ul {
+  float: right;
+  margin-top: 85px;
+  li {
+    display:inline;
+    padding: 50px 0px 0px 30px;
+    a {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      &:hover {
+        color: $secondary-color;
+        text-decoration: none;
+            }
+        }
+    }
+  }
+
+@media only screen and (max-width: 479px) {
+.main-nav ul {
+  float: none;
+  margin: 20px 0 0 0;
+  text-align: center;
+
+  li {
+    display:inline;
+    padding: 0px 10px 0px 10px;
+  }
+}
+}
+
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.main-nav ul {
+  float: none;
+  margin-top: 30px;
+  margin-bottom:1px;
+  text-align: center;
+
+  li {
+    display:inline;
+    padding: 0px 10px 0px 10px;
+  }
+}
+}
+
+/*FIXED.main-small {
+  position: fixed;
+  top:0;
+  z-index:1;
+  width:100%;
+  background: $primary-color;
+  min-height:135px;
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    min-height:65px;
+  }
+}*/
+
+.main-small {
+  background: $primary-color;
+  width:100%;
+}
+
+// 3. CONTACT BAR 
+
+.contact {
+  background: #ddd;
+}
+
+.contact ul {
+  float: right;
+  font-weight: 500;
+  margin:15px 0;
+  
+  @media only screen and (max-width: 479px) {
+    float: none;
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    float: none;
+  }
+  
+  li {
+    display:inline;
+    padding: 0 20px;
+    
+    @media only screen and (max-width: 479px) {
+      display: block;
+      text-align: center;
+     }
+  }
+
+   @media only screen and (min-width: 480px) and (max-width: 767px) {
+      display: block;
+      text-align:center;
+      padding: 0 100px;
+    }
+      
+    a {
+      color:#777;
+      font-size: 14px;
+      text-decoration: none;
+      &:hover {
+       color: #fff;
+        text-decoration: none;
+      }
+    }
+}
+
+// 4. SOCIAL BAR 
+.social {
+  background: $primary-color;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.social ul {
+  margin: 30px 0;
+
+  @media only screen and (max-width: 479px) {
+      margin:30px 0 0 0;
+      }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+      margin: 20px 0 0 0;
+    }
+
+  li {
+   display:inline;
+   padding: 0px 3px; 
+   
+  @media only screen and (max-width: 479px) {
+    margin: 0 auto;
+    padding: 5px;
+  }   
+}
+}
+
+.twitter:hover, .linkedin:hover,
+.github:hover, .dribbble:hover, .behance:hover {
+  opacity: 0.5;
+}
+
+// 5. BUTTONS
+.btn-transp {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font: {
+    family: $body-font-family;
+    size: 14px;
+    weight: 700;
+  }
+  letter-spacing: 1px;
+  margin: 20px 15px 0 15px;
+  padding: 5px 10px;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+
+  &:hover{
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+// 3D BUTTONS
+.btn {
+  background-color: $button-color;
+  background: none;
+  border: none;
+  border-radius: 2px;
+  color: lighten($secondary-color, 10%);
+  cursor: pointer;
+  display: inline-block;
+  font: {
+    family: $body-font-family;
+    size: 15px;
+    weight: 700;
+  }
+  letter-spacing: 1px;
+  margin: 30px;
+   @media only screen and (max-width: 479px) {
+        margin:20px;
+      }
+  outline: none;
+  padding: 10px 15px;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+
+  &:visited{
+    color: $secondary-color;
+  }
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:before {
+  line-height: 1;
+  position: relative;
+  speak: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.btn-8 {
+  background: $button-color;
+  display: block;
+  outline: 0px solid $button-color; 
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.btn-8:active {
+  color: $secondary-color;
+  background: $button-color;
+}
+
+// Button 8a 
+.btn-8a:after {
+  background: darken($button-color, 10%);
+  height: 42%; 
+  left: 0;
+  top: -40%;
+  transform-origin: 0% 100%;
+  transform: rotateX(90deg);
+  width: 100%;
+  -webkit-transform-origin: 0% 100%;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform-origin: 0% 100%;
+  -moz-transform: rotateX(90deg);
+}
+
+.btn-8a:hover {
+  transform: rotateX(-15deg);
+  -webkit-transform: rotateX(-15deg);
+  -moz-transform: rotateX(-15deg);
+  -ms-transform: rotateX(-15deg);
+}
+
+// Button 8b 
+.btn-8b:after {
+  background: darken($button-color, 10%);
+  height: 40%;
+  left: 0;
+  top: 100%;
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  width: 100%;
+  -webkit-transform-origin: 0% 0%;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform-origin: 0% 0%;
+  -moz-transform: rotateX(-90deg);
+  -ms-transform-origin: 0% 0%;
+  -ms-transform: rotateX(-90deg);
+}
+
+.btn-8b:hover {
+  transform: rotateX(15deg);
+  -webkit-transform: rotateX(15deg);
+  -moz-transform: rotateX(15deg);
+  -ms-transform: rotateX(15deg);
+}
+
+// Button 8c 
+.btn-8c:after {
+  background: darken($button-color, 10%);
+  height: 100%;
+  left: -20%;
+  top: 0;
+  width: 21%; 
+  -webkit-transform-origin: 100% 0%;
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform-origin: 100% 0%;
+  -moz-transform: rotateY(-90deg);
+  -ms-transform-origin: 100% 0%;
+  -ms-transform: rotateY(-90deg);
+  transform-origin: 100% 0%;
+  transform: rotateY(-90deg);
+}
+
+.btn-8c:hover {
+  -webkit-transform: rotateY(20deg);
+  -moz-transform: rotateY(20deg);
+  -ms-transform: rotateY(20deg);
+  transform: rotateY(20deg);
+}
+
+// Button 8d 
+.btn-8d:after {
+  background: darken($button-color, 10%);
+  height: 100%;
+  left: 100%;
+  top: 0;
+  width: 20%;
+  -webkit-transform-origin: 0% 0%;
+  -webkit-transform: rotateY(90deg);
+  -moz-transform-origin: 0% 0%;
+  -moz-transform: rotateY(90deg);
+  -ms-transform-origin: 0% 0%;
+  -ms-transform: rotateY(90deg);
+  transform-origin: 0% 0%;
+  transform: rotateY(90deg);
+}
+
+.btn-8d:hover {
+  -webkit-transform: rotateY(-20deg);
+  -moz-transform: rotateY(-20deg);
+  -ms-transform: rotateY(-20deg);
+  transform: rotateY(-20deg);
+}
+
+// 6. MISC 
+.color-bar-sm {
+  background: url('../images/color-bar.png');
+  background-repeat: repeat-x;
+    margin: 0px -10px 0px -10px;
+    position: relative;
+    bottom: -20px;
+}
+
+.color-bar {
+  background: url('../images/color-bar.png');
+  background-repeat: repeat-x;
+  margin: -10px -10px 80px -10px;
+}
+
+.down-circle-hp, .down-circle-p {
+  background: $secondary-color;
+  border-radius: 50%;
+  box-shadow: 2px 2px darken($secondary-color, 10%);
+  height: 75px;
+  position: relative;
+  width: 75px;
+
+  &:hover{
+    background: darken($secondary-color, 10%);
+    box-shadow: 2px 2px lighten($secondary-color, 10%);
+    cursor: pointer;
+  }
+
+  img{
+    bottom: 24px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.right { 
+  float: right;
+  @media only screen and (max-width: 479px) {
+    float:none; 
+  }
+
+   @media only screen and (min-width: 480px) and (max-width: 767px) {
+      float: none;
+    }
+}
+
+.left { 
+  float: left;
+  @media only screen and (max-width: 479px) {
+        float:none; 
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    float: none;
+  }
+}
+
+.center { 
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+
+
+
+

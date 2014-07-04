@@ -1,0 +1,392 @@
+//PORTFOLIO PAGE STYLES
+
+.gallery-box {
+   display: inline-block;
+   position: relative; 
+}
+
+/*
+.overlay {
+  -webkit-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+  -moz-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+  -o-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none;
+  width: 220px;
+  height: 155px; 
+}
+
+  .overlay span {
+    -webkit-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -moz-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -o-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transform: translateY(50px);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    opacity: 0;
+    font-size: 14px;
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+
+    margin-top: -62px;
+    margin-left: -105px;
+    left: 50%;
+    top: 50%;
+    padding: 0 10px;
+    border: 0px solid white;
+    color: white; 
+  }
+    .overlay:hover, .overlay:focus {
+    background-color: $third-color;
+    background-color: rgba($third-color, 0.9);
+    -webkit-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -moz-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    -o-transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1); 
+  }
+    .no-touch .overlay:hover span, .overlay:focus span {
+      -webkit-transition: -webkit-transform 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+      -moz-transition: -moz-transform 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+      -o-transition: -o-transform 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+      transition: transform 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      -o-transform: translateY(0px);
+      transform: translateY(0px);
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1; 
+    }
+
+.btn-overlay {
+  border: 1px solid #fff;
+  color: #fff;
+  font: {
+    family: $body-font-family;
+    size: 14px;
+    weight: 700;
+  }
+  letter-spacing: 1px;
+  padding: 5px;
+  text-align: center;
+  width: 75px;
+}*/
+
+
+.main-large-port {
+	background: $primary-color url('../images/port-main-image.jpg') center center;
+  background-size: cover; 
+  -moz-background-size: cover;
+  line-height: 10px;
+  min-height: 400px;
+  text-align: center;
+
+h1 {
+  color: #fff;
+  font: {
+    family: $merriweather;
+    size: $h1-font-size;
+    weight: 700;
+  }
+  margin-top: 90px;
+    text-shadow: 3px 3px darken($primary-color, 10%);
+
+    @media only screen and (max-width: 479px) {
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      line-height: 68px;
+    }
+  }
+
+  h2 {
+  color: #fff;
+  font: {
+    family: $raleway;
+    size: $h2-font-size;
+    weight: 600;
+  }
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text: {
+      shadow: 2px 2px darken($primary-color, 10%);
+      transform: uppercase;
+      }
+
+      @media only screen and (max-width: 479px) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+}
+
+.port-block{
+
+  .inner-block{
+    padding: 0;
+  }
+
+  .port-1 {
+    background-color: $third-color;
+    height: 60%;
+    position: absolute;
+    padding: 10px;
+    width: 91%;
+    z-index: 1;
+
+    @media only screen and (max-width: 479px) {
+      height: 63%;
+      width: 78%;
+      margin-left: 23px;
+    }
+  }
+
+//BUTTON
+  .btn-transp-sm {
+  border: 1px solid #fff;
+  color: #fff;
+  display: inline-block;
+  font: {
+    family: $body-font-family;
+    size: 14px;
+    weight: 700;
+  }
+  letter-spacing: 1px;
+  margin: 20px 15px 0 15px;
+  padding: 5px 10px;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+
+  &:hover{
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+.icons {
+  margin: 40px 0 0 0;
+  
+  a i {
+    display: inline-block;
+    margin-right: 20px;
+    color: #777;
+    &.last{ 
+      margin-right: 0; 
+    }
+    &:hover{
+      color:$secondary-color;
+    }
+  }
+}
+  
+ .down-circle-p{
+    margin: 0 auto;
+    position: relative;
+    bottom: -40px;
+}
+
+// Tooltips
+
+[data-tooltip],
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after {
+  position: absolute;
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: 
+    opacity 0.2s ease-in-out,
+    visibility 0.2s ease-in-out,
+    -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -moz-transition:    
+    opacity 0.2s ease-in-out,
+    visibility 0.2s ease-in-out,
+    -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  transition:         
+    opacity 0.2s ease-in-out,
+    visibility 0.2s ease-in-out,
+    transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform:    translate3d(0, 0, 0);
+  transform:         translate3d(0, 0, 0);
+  pointer-events: none;
+}
+
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after,
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+
+.tooltip:before,
+[data-tooltip]:before {
+  z-index: 1001;
+  border: 6px solid transparent;
+  background: transparent;
+  content: "";
+}
+
+
+.tooltip:after,
+[data-tooltip]:after {
+  z-index: 1000;
+  padding: 8px;
+  background-color: $secondary-color;
+  border-radius:5px;
+  opacity: .85;
+  color: #fff;
+  content: attr(data-tooltip);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after,{
+  bottom: 100%;
+  left: 80%;
+}
+
+[data-tooltip]:before,
+.tooltip:before, {
+  margin-left: -36px;
+  margin-bottom: -12px;
+  border-top-color: $secondary-color;
+  border-top-color: $secondary-color;
+}
+
+
+[data-tooltip]:after,
+.tooltip:after {
+  margin-left: -80px;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after,
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after,
+ {
+  -webkit-transform: translateY(-12px);
+  -moz-transform:    translateY(-12px);
+  transform:         translateY(-12px); 
+}
+
+  }
+
+  .p-port-block-1{
+    position: relative;
+    margin-bottom:50px;
+    margin-top:30px;
+
+  img {
+    border-radius: $border-radius;
+
+    @media only screen and (max-width: 479px) {
+      margin-bottom: 75px;
+  }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      margin-bottom: 75px;
+}
+  }
+
+  h5{ font-family: $raleway; }
+
+  .p-port-top-block {
+    position: relative;
+    @include transition(0.2s, all, ease-in);
+    z-index: 3;
+
+    &:hover{
+      z-index: 1;
+    }
+  }
+
+  .p-port-back-block {
+    background-color: $third-color;
+    border-radius: $border-radius;
+    height: 155px;
+    left: 40px;
+    opacity: .9;
+    position: absolute;
+    top: 0;
+    width: 220px;
+    z-index: 2;
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      left: 8px;
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      left: 100px;
+    }
+
+    &:hover{
+      z-index: 4;
+      color: #fff;
+    }
+
+    .p-port-inner-back-block-1{
+      padding: 20px 10px 0 10px;
+
+       .btn-transp{
+        margin: 0;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.radius {
+  img{
+    border-radius: $border-radius;
+  }
+}
+
+.port-ro {
+  color: $third-color;
+  
+  &:hover{
+    color: $primary-color;
+  }
+}

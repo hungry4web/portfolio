@@ -1,0 +1,34 @@
+// Google Fonts
+@import url('http://fonts.googleapis.com/css?family=Raleway:400,700,600,500|Merriweather:400,700,400italic,700italic');
+
+
+// BUTTON
+$button-font-weight: 400;
+$button-color: #f76b47; //red
+
+// COLORS
+$primary-color: #02b2b0; // dark aqua
+$secondary-color: #f6ca68; // yellow
+$third-color: #f76b47; // red
+$fourth-color: #b3d8d9; // light blue
+
+// FONTS
+$raleway: 'Raleway', sans-serif;
+$merriweather: 'Merriweather', serif;
+$header-font-family: $merriweather,Helvetica,Arial,sans-serif;
+$header-font-color-on: #fff;
+$header-font-color-off: #777;
+$body-font-family: $raleway,Helvetica,Arial,sans-serif;
+$body-font-color: #777;
+
+//TYPOGRAPHY
+$h1-font-size: 68px;
+$h2-font-size: 33px;
+$h3-font-size: 26px;
+$h4-font-size: 20px;
+$h5-font-size: 1rem;
+$h6-font-size: rem-calc(14);
+
+$fixed-header-height:135px;
+
+$border-radius: 7px;
