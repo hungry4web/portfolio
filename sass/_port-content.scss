@@ -100,13 +100,14 @@ h1 {
   }
   margin-top: 90px;
     text-shadow: 3px 3px darken($primary-color, 10%);
+
     @media only screen and (max-width: 479px) {
       font-size: 53px;
       line-height: 57px;
     }
 
-     @media only screen and (min-width: 480px) and (max-width: 767px) {
-     line-height: 68px;
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      line-height: 68px;
     }
   }
 
@@ -123,13 +124,13 @@ h1 {
       shadow: 2px 2px darken($primary-color, 10%);
       transform: uppercase;
       }
+
       @media only screen and (max-width: 479px) {
       font-size: 28px;
       line-height: 32px;
     }
   }
 }
-
 
 .port-block{
 
@@ -141,9 +142,9 @@ h1 {
     background-color: $third-color;
     height: 60%;
     position: absolute;
+    padding: 10px;
     width: 91%;
     z-index: 1;
-    padding: 10px;
 
     @media only screen and (max-width: 479px) {
       height: 63%;
@@ -177,12 +178,9 @@ h1 {
   }
 }
 
-
 .icons {
   margin: 40px 0 0 0;
   
- 
-
   a i {
     display: inline-block;
     margin-right: 20px;
@@ -196,7 +194,6 @@ h1 {
   }
 }
   
-
  .down-circle-p{
     margin: 0 auto;
     position: relative;
@@ -210,8 +207,6 @@ h1 {
   position: relative;
   cursor: pointer;
 }
-
-
 
 [data-tooltip]:before,
 [data-tooltip]:after,
@@ -319,23 +314,21 @@ h1 {
   }
 
   .p-port-block-1{
-  position: relative;
-  margin-bottom:50px;
-  margin-top:30px;
+    position: relative;
+    margin-bottom:50px;
+    margin-top:30px;
 
   img {
     border-radius: $border-radius;
 
     @media only screen and (max-width: 479px) {
-margin-bottom: 75px;
+      margin-bottom: 75px;
   }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  margin-bottom: 75px;
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      margin-bottom: 75px;
 }
   }
-
-  
 
   h5{ font-family: $raleway; }
 
@@ -351,14 +344,14 @@ margin-bottom: 75px;
 
   .p-port-back-block {
     background-color: $third-color;
+    border-radius: $border-radius;
     height: 155px;
-    position: absolute;
     left: 40px;
     opacity: .9;
+    position: absolute;
     top: 0;
     width: 220px;
     z-index: 2;
-    border-radius: $border-radius;
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
       left: 8px;
@@ -380,7 +373,6 @@ margin-bottom: 75px;
         margin: 0;
         color: #fff;
       }
-
     }
   }
 }
@@ -388,11 +380,12 @@ margin-bottom: 75px;
 .radius {
   img{
     border-radius: $border-radius;
-}
+  }
 }
 
 .port-ro {
   color: $third-color;
+  
   &:hover{
     color: $primary-color;
   }

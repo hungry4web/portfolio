@@ -7,6 +7,7 @@
   line-height: 10px;
   min-height: 400px;
   text-align: center;
+
   @media only screen and (max-width: 479px) {
        background-position: 24% center;
     }
@@ -20,6 +21,7 @@ h1 {
   }
   margin-top:90px;
     text-shadow: 3px 3px darken($primary-color, 10%);
+
     @media only screen and (max-width: 479px) {
       font-size: 53px;
       line-height: 57px;
@@ -50,12 +52,11 @@ h2 {
   }
 }
 
-  .down-circle-hp{
-    margin: 0 auto;
-    position: relative;
-    bottom: -40px;
+.down-circle-hp{
+  bottom: -40px;
+  margin: 0 auto;
+  position: relative;
   }
-
 
 .favorites {
   margin-top:10px;
@@ -74,7 +75,7 @@ h2 {
       align: center;
       transform: uppercase;
     }
-} 
+  } 
 }
 
  .quote {
@@ -84,7 +85,6 @@ h2 {
     margin-top:35px;
 }
 
-
 // FAVS CASE STUDIES
 .feature-block-1{
   position: relative;
@@ -93,9 +93,11 @@ h2 {
 
    img{
     border-radius: $border-radius;
+
     @media only screen and (max-width: 479px) {
        margin:20px;
      }
+
      @media only screen and (min-width: 480px) and (max-width: 767px) {
       margin-bottom:40px;
      }
@@ -106,6 +108,7 @@ h2 {
 
   .top-block {
     position: relative;
+
     @include transition(0.2s, all, ease-in);
     z-index: 3;
 
@@ -124,15 +127,17 @@ h2 {
     top: 0;
     width: 265px;
     z-index: 2;
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-left: 50px;
-}
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  width:235px;
-   height:190px;
-  top: -10px;
-}
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      left: 50px;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      height:190px;
+      top: -10px;
+      width:235px;
+    }
+
     &:hover{
       z-index: 4;
       color: #fff;
@@ -157,19 +162,22 @@ left: 50px;
 }
 
 .feature-block-2{
+  bottom: 18px;
   position: relative;
-   margin-top: 50px;
+  margin-top: 50px;
   margin-bottom: 50px;
-    bottom: 18px;
-    @media only screen and (max-width: 479px) {
-       bottom:-10px;
+
+  @media only screen and (max-width: 479px) {
+      bottom:-10px;
     }
 
     img{
       border-radius: $border-radius;
+
     @media only screen and (max-width: 479px) {
        margin:0px;
     }
+
     @media only screen and (min-width: 480px) and (max-width: 767px) {
       margin-bottom:40px;
      }
@@ -194,21 +202,21 @@ left: 50px;
     bottom: 18px;
     height: 200px;
     @include skew (2,4);
-    position: absolute;
     left: -5px;
+    position: absolute;
     top: -5px;
     width: 265px;
     z-index: 2;
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
-left: 65px;
-top:12px;
-}
+      left: 65px;
+      top:12px;
+    }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  width:235px;
-  height:190px;
-  top: 10px;
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      height:190px;
+      top: 10px;
+      width:235px;
 }
 
     &:hover{
@@ -229,15 +237,17 @@ top:12px;
 }
 
 .feature-block-3{
-  position: relative;
-   margin-top: 50px;
+  margin-top: 50px;
   margin-bottom: 50px;
-@media only screen and (max-width: 479px) {
+  position: relative;
+
+  @media only screen and (max-width: 479px) {
        bottom:-50px;
     }
 
    img{
     border-radius: $border-radius;
+
     @media only screen and (max-width: 479px) {
        margin:20px;
     }
@@ -267,13 +277,13 @@ top:12px;
     z-index: 2;
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
-right: 65px;
-}
+      right: 65px;
+    }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  width:235px;
-  height:190px;
-  top: -10px;
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      height:190px;
+      top: -10px;
+      width:235px;
 }
 
     &:hover{
@@ -286,8 +296,8 @@ right: 65px;
       padding: 30px 20px;
 
       .btn-transp{
-        margin: 10px;
         color: #fff;
+        margin: 10px;
       }
     }
   }
@@ -295,7 +305,7 @@ right: 65px;
 
 .hp-buttons-dt {
   @media only screen and (max-width: 479px) {
-       display: none;
+      display: none;
     }
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -304,33 +314,31 @@ right: 65px;
 }
 
 .hp-button-box {
-  @media only screen and (max-width: 479px) {
-       margin-top:65px;
+    @media only screen and (max-width: 479px) {
+      margin-top:65px;
     }
 
      @media only screen and (min-width: 480px) and (max-width: 767px) {
       margin-top:65px;
     }
-
 }
 
-
 .body-white {
-    color:#fff;
-    font-weight: 500;
-    line-height: 18px;
+  color:#fff;
+  font-weight: 500;
+  line-height: 18px;
 }
 
 .testimonials {
 	background: lighten($secondary-color, 10%);
   padding: 0 0 160px 0;
 	text-align: center;
+
   @media only screen and (max-width: 479px) {
        display: none;
     }
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
       display: none;
-    }
-    
+    } 
 }

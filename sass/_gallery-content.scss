@@ -1,11 +1,11 @@
 // GALLERY
 
 .main-gallery {
-  padding-top:10px;
   margin-top:40px;
   margin-bottom:65px;
+  padding-top:10px;
   text-align: center;
-    }
+}
 
   h3 {
     color: $header-font-color-off;
@@ -18,9 +18,8 @@
     text: {
       align: center;
       transform: uppercase;
+      }
     }
-}
-
 
 .gallery-circle {
   background: $fourth-color;
@@ -28,15 +27,14 @@
   box-shadow: 2px 2px darken($fourth-color, 10%);
   height: 45px;
   position: relative;
-margin-top:10px;
-margin-bottom:10px;
+  margin-top:10px;
+  margin-bottom:10px;
   width: 45px;
 
   &:hover{
     background: darken($fourth-color, 10%);
     box-shadow: 2px 2px lighten($fourth-color, 10%);
     cursor: pointer;
-
   }
 
   i {

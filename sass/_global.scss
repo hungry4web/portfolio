@@ -25,7 +25,6 @@ body, p {
   line-height: 20px;
 }
 
-
 // 2.HEADER NAV 
 .logo {
   float: left;
@@ -35,14 +34,12 @@ body, p {
   padding-top:20px;
 }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
-    padding-top:20px;
     float: none;
+    padding-top:20px;
     margin: 0 auto;
-    text-align: center;
-    
+    text-align: center; 
   }
 } 
-
 
 .main-nav{
   margin:-10px;
@@ -70,33 +67,30 @@ body, p {
 @media only screen and (max-width: 479px) {
 .main-nav ul {
   float: none;
-    margin: 20px 0 0 0;
-    text-align: center;
+  margin: 20px 0 0 0;
+  text-align: center;
+
   li {
     display:inline;
     padding: 0px 10px 0px 10px;
-        }
-    }
   }
-
-
+}
+}
 
  @media only screen and (min-width: 480px) and (max-width: 767px) {
 
 .main-nav ul {
   float: none;
-    margin-top: 30px;
-    margin-bottom:1px;
-    text-align: center;
+  margin-top: 30px;
+  margin-bottom:1px;
+  text-align: center;
 
   li {
     display:inline;
     padding: 0px 10px 0px 10px;
-
-   
-        }
-    }
   }
+}
+}
 
 /*FIXED.main-small {
   position: fixed;
@@ -112,11 +106,8 @@ body, p {
 }*/
 
 .main-small {
-  width:100%;
   background: $primary-color;
-
-
-  
+  width:100%;
 }
 
 // 3. CONTACT BAR 
@@ -129,16 +120,19 @@ body, p {
   float: right;
   font-weight: 500;
   margin:15px 0;
+  
   @media only screen and (max-width: 479px) {
-        float: none;
-      }
+    float: none;
+  }
 
-       @media only screen and (min-width: 480px) and (max-width: 767px) {
-      float: none;
-    }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    float: none;
+  }
+  
   li {
     display:inline;
     padding: 0 20px;
+    
     @media only screen and (max-width: 479px) {
       display: block;
       text-align: center;
@@ -148,11 +142,9 @@ body, p {
    @media only screen and (min-width: 480px) and (max-width: 767px) {
       display: block;
       text-align:center;
-       padding: 0 100px;
+      padding: 0 100px;
     }
       
-
-
     a {
       color:#777;
       font-size: 14px;
@@ -160,44 +152,39 @@ body, p {
       &:hover {
        color: #fff;
         text-decoration: none;
-            }
-        }
+      }
+    }
 }
-
-
-
 
 // 4. SOCIAL BAR 
 .social {
   background: $primary-color;
-  width: 100%;
   margin: 0 auto;
   text-align: center;
+  width: 100%;
 }
 
 .social ul {
   margin: 30px 0;
 
   @media only screen and (max-width: 479px) {
-        margin:30px 0 0 0;
+      margin:30px 0 0 0;
       }
 
-      @media only screen and (min-width: 480px) and (max-width: 767px) {
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
       margin: 20px 0 0 0;
     }
+
   li {
    display:inline;
    padding: 0px 3px; 
    
-
-   @media only screen and (max-width: 479px) {
-        margin: 0 auto;
-        padding: 5px;
-      }   
-    }
+  @media only screen and (max-width: 479px) {
+    margin: 0 auto;
+    padding: 5px;
+  }   
 }
-
-
+}
 
 .twitter:hover, .linkedin:hover,
 .github:hover, .dribbble:hover, .behance:hover {
@@ -430,7 +417,7 @@ body, p {
 .right { 
   float: right;
   @media only screen and (max-width: 479px) {
-        float:none; 
+    float:none; 
   }
 
    @media only screen and (min-width: 480px) and (max-width: 767px) {

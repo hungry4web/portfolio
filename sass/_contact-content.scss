@@ -1,13 +1,13 @@
 // CONTACT
 
 .main-contact {
-  padding-top:10px;
-    margin-top:40px;
-  
   margin-bottom:65px;
-	@media only screen and (max-width: 479px) {
-      text-align: center;
-    }
+  margin-top:40px;
+  padding-top:10px;
+  
+  @media only screen and (max-width: 479px) {
+    text-align: center;
+  }
 
   h3 {
     color: $header-font-color-off;
@@ -21,7 +21,7 @@
       align: center;
       transform: uppercase;
     }
-}
+  }
 }
 
 .map {
@@ -31,21 +31,20 @@
   line-height: 10px;
   min-height: 400px;
   text-align: center;
+  
   @media only screen and (max-width: 479px) {
        background-position: 24% center;
     }
   }
 
-  .circle-map {
+.circle-map {
   background: $fourth-color;
   border-radius: 50%;
   bottom: -150px;
   box-shadow: 2px 2px darken($fourth-color, 10%);
-  
   font-size: 15px;
-  
-  line-height:19px;
   height: 135px;
+  line-height:19px;
   margin: 0 auto;
   position: relative;
   width: 135px;
@@ -67,9 +66,8 @@
   }
 }
 
- .down-circle-hp{
-    margin: 0 auto;
-    position: relative;
-    
-  }
+.down-circle-hp {
+  margin: 0 auto;
+  position: relative;
+}
 
